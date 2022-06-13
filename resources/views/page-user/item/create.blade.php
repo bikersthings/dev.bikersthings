@@ -138,6 +138,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 text-right">
+                        <div class="card">
+                            <div class="card-body">
+                                <button class="btn btn-success">Simpan</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
