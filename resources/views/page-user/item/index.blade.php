@@ -29,7 +29,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-striped" id="dataTable">
-                                <thead>
+                                <thead class="text-center">
                                     <tr>
                                     <th class="text-center">
                                         #
@@ -43,7 +43,7 @@
                                     <th>Action</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody class="text-center">
                                     <tr>
                                         <td class="align-middle text-center">
                                             1
@@ -51,7 +51,63 @@
                                         <td class="text-center">
                                             <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="" style="width: 300px; border-radius: 10px">
                                             <br>
-                                            <div class="badge badge-success mt-2">Create a mobile app</div>
+                                            <div class="badge badge-primary mt-2">Create a mobile app</div>
+                                        </td>
+                                        <td class="align-middle">
+                                            Rp [90.000.000]
+                                        </td>
+                                        <td class="align-middle">
+                                            [Kategori]
+                                        </td>
+                                        <td class="align-middle">
+                                            [Brand]
+                                        </td>
+                                        <td class="align-middle">
+                                            [Tipe]
+                                        </td>
+                                        <td class="align-middle">
+                                            [Status]
+                                        </td>
+                                        <td class="align-middle text-center">
+                                            <button class="btn btn-primary"><i class="fas fa-ellipsis-v"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle text-center">
+                                            1
+                                        </td>
+                                        <td class="text-center">
+                                            <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="" style="width: 300px; border-radius: 10px">
+                                            <br>
+                                            <div class="badge badge-primary mt-2">Create a mobile app</div>
+                                        </td>
+                                        <td class="align-middle">
+                                            Rp [90.000.000]
+                                        </td>
+                                        <td class="align-middle">
+                                            [Kategori]
+                                        </td>
+                                        <td class="align-middle">
+                                            [Brand]
+                                        </td>
+                                        <td class="align-middle">
+                                            [Tipe]
+                                        </td>
+                                        <td class="align-middle">
+                                            [Status]
+                                        </td>
+                                        <td class="align-middle text-center">
+                                            <button class="btn btn-primary"><i class="fas fa-ellipsis-v"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle text-center">
+                                            1
+                                        </td>
+                                        <td>
+                                            <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="" style="width: 300px; border-radius: 10px">
+                                            <br>
+                                            <div class="badge badge-primary mt-2">Create a mobile app</div>
                                         </td>
                                         <td class="align-middle">
                                             Rp [90.000.000]

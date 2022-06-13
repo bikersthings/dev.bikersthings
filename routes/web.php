@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('page-user.item.index');
 });
 
+Route::get('/item', function () {
+    return view('page-user.item.index');
+});
+
 Route::get('/item/create', function () {
     return view('page-user.item.create');
+});
+
+Route::get('/icebox', function () {
+    return view('page-user.icebox.index');
+});
+
+Route::get('/setting', function () {
+    return view('page-user.setting.index');
 });
