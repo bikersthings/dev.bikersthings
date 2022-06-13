@@ -15,7 +15,7 @@
                             <div class="card-body">
                                 <div class="form-title mb-4">Foto Profile</div>
                                 <div class="radio-form">
-                                    <img src="assets/img/placeholder/Utama.png" alt="">
+                                    <img src="{{asset('assets/img/placeholder/Utama.png')}}" alt="">
                                 </div>
                             </div>
                         </div>

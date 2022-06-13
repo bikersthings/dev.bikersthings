@@ -22,7 +22,7 @@
                         </div>
                     </div>
                 </div> --}}
-                <a href="{{('/item/create')}}" class="btn btn-primary mb-4">Tambah Item</a>
+                <a href="{{('/user/item/create')}}" class="btn btn-primary mb-4">Tambah Item</a>
                 <div class="row">
                     <div class="col-12">
                     <div class="card">
@@ -31,16 +31,16 @@
                                 <table class="table table-striped" id="dataTable">
                                 <thead class="text-center">
                                     <tr>
-                                    <th class="text-center">
-                                        #
-                                    </th>
-                                    <th>Produk</th>
-                                    <th>Harga</th>
-                                    <th>Kategori</th>
-                                    <th>Brand</th>
-                                    <th>Tipe</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
+                                        <th>
+                                            #
+                                        </th>
+                                        <th>Produk</th>
+                                        <th>Harga</th>
+                                        <th>Kategori</th>
+                                        <th>Brand</th>
+                                        <th>Tipe</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody class="text-center">
@@ -66,10 +66,14 @@
                                             [Tipe]
                                         </td>
                                         <td class="align-middle">
-                                            [Status]
+                                            <div class="badge badge-dark">Reguler</div> <br>
+                                            <div class="badge badge-warning">On Hold</div> <br>
+                                            <div class="badge badge-primary">Boosted!</div>
                                         </td>
                                         <td class="align-middle text-center">
-                                            <button class="btn btn-primary"><i class="fas fa-ellipsis-v"></i></button>
+                                            <button class="btn btn-success"><i class="fas fa-rocket"></i></button>
+                                            <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                                            <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -94,10 +98,14 @@
                                             [Tipe]
                                         </td>
                                         <td class="align-middle">
-                                            [Status]
+                                            <div class="badge badge-dark">Reguler</div> <br>
+                                            <div class="badge badge-warning">On Hold</div> <br>
+                                            <div class="badge badge-primary">Boosted!</div>
                                         </td>
                                         <td class="align-middle text-center">
-                                            <button class="btn btn-primary"><i class="fas fa-ellipsis-v"></i></button>
+                                            <button class="btn btn-success"><i class="fas fa-rocket"></i></button>
+                                            <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                                            <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -122,10 +130,14 @@
                                             [Tipe]
                                         </td>
                                         <td class="align-middle">
-                                            [Status]
+                                            <div class="badge badge-dark">Reguler</div> <br>
+                                            <div class="badge badge-warning">On Hold</div> <br>
+                                            <div class="badge badge-primary">Boosted!</div>
                                         </td>
                                         <td class="align-middle text-center">
-                                            <button class="btn btn-primary"><i class="fas fa-ellipsis-v"></i></button>
+                                            <button class="btn btn-success"><i class="fas fa-rocket"></i></button>
+                                            <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                                            <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
                                         </td>
                                     </tr>
                                 </tbody>

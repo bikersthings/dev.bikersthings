@@ -33,6 +33,10 @@
 <link rel="stylesheet" href="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/codemirror/theme/duotone-dark.css')}}">
 <link rel="stylesheet" href="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/selectric/public/selectric.css')}}">
 
+<!-- Graph CSS Libraries -->
+<link rel="stylesheet" href="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/jqvmap/dist/jqvmap.min.css')}}">
+<link rel="stylesheet" href="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/flag-icon-css/css/flag-icon.min.css')}}">
+
 <!-- Stisla CSS -->
 <link rel="stylesheet" href="{{asset('assets/css/stisla-style.css')}}">
 <link rel="stylesheet" href="{{asset('https://tubaguskresnabayu.com/stisla/assets/css/components.css')}}">
@@ -102,6 +106,13 @@
 <script src="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/codemirror/lib/codemirror.js')}}"></script>
 <script src="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/codemirror/mode/javascript/javascript.js')}}"></script>
 <script src="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/selectric/public/jquery.selectric.min.js')}}"></script>
+
+<!-- JS Libraies -->
+<script src="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/jquery-sparkline/jquery.sparkline.min.js')}}"></script>
+<script src="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/chart.js/dist/Chart.min.js')}}"></script>
+<script src="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/jqvmap/dist/jquery.vmap.min.js')}}"></script>
+<script src="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script>
+<script src="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/jqvmap/dist/maps/jquery.vmap.indonesia.js')}}"></script>
 
 <!-- SWAL JS Libraies -->
 <script src="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/sweetalert/dist/sweetalert.min.js')}}"></script>
