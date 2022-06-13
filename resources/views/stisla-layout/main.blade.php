@@ -10,6 +10,11 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
 <!-- Adv Form CSS Libraries -->
 <link rel="stylesheet" href="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/bootstrap-daterangepicker/daterangepicker.css')}}">
 <link rel="stylesheet" href="{{asset('https://tubaguskresnabayu.com/stisla/node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css')}}">
@@ -36,8 +41,8 @@
 <link rel="stylesheet" href="{{asset('assets/css/stisla-extend.css')}}">
 
 <style>
-    :root {
-    --primary: {{ Request::is('*workshop*') ? '#a82504' : ''}} {{ Request::is('*warehouse*') ? '#042aa8' : ''}} {{ Request::is('*admin*') ? 'green' : ''}};
+    html * {
+        font-family: 'K2D', sans-serif;
     }
 </style>
 
@@ -48,17 +53,7 @@
     <div class="main-wrapper">
         @include('stisla-layout.topbar')
 
-        <div {{ Request::is('*warehouse*') ? '' : 'hidden' }}>
-            @include('stisla-layout.sidebar-wh')
-        </div>
-
-        <div {{ Request::is('*workshop*') ? '' : 'hidden' }}>
-            @include('stisla-layout.sidebar-wo')
-        </div>
-
-        <div {{ Request::is('*admin*') ? '' : 'hidden' }}>
-            @include('stisla-layout.sidebar-admin')
-        </div>
+        @include('stisla-layout.sidebar')
         
         @yield('content')
 
