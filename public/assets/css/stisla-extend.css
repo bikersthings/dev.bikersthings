@@ -1,3 +1,11 @@
+/* Global Extended start */
+
+::placeholder {
+  opacity: 0.4!Important;
+}
+
+/* Global Extended end */
+
 /* Upload File start */
 
 .file-upload {
@@ -124,3 +132,37 @@
 }
 
 /* Card Item end */
+
+
+
+/* Stisla Form start */
+
+.card-form {
+  border-radius: 7px;
+  /* border: solid 1px #f7f7f7; */
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+}
+
+.card-form .card-body {
+  padding: 30px 40px;
+}
+
+.card-form .form-title {
+  font-weight: bolder;
+  font-size: larger;
+  color: black;
+}
+
+.card-form .form-sub-title {
+  margin-bottom: 30px;
+}
+
+.card-form .radio-form {
+  display: flex;
+}
+
+.card-form .radio-form > div {
+  margin-right: 20px;
+}
+
+/* Stisla Form end */

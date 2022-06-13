@@ -22,7 +22,7 @@
                         </div>
                     </div>
                 </div> --}}
-                <a href="#" class="btn btn-primary mb-4">Tambah Item</a>
+                <a href="{{('/item/create')}}" class="btn btn-primary mb-4">Tambah Item</a>
                 <div class="row">
                     <div class="col-12">
                     <div class="card">

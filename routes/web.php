@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('page-user.item.index');
 });
+
+Route::get('/item/create', function () {
+    return view('page-user.item.create');
+});
