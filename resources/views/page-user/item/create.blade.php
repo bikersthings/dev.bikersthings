@@ -48,6 +48,96 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12">
+                        <div class="card card-form">
+                            <div class="card-body">
+                                <div class="form-title">Harga Item</div>
+                                <div class="form-sub-title">Harga Jual atau Budget Pembelian</div>
+                                <div class="form-group mb-0">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text">Rp</div>
+                                        </div>
+                                        <input type="number" class="form-control" placeholder="90.000.000">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card card-form">
+                            <div class="card-body">
+                                <div class="form-title">Foto Item</div>
+                                <div class="form-sub-title">Rekomendasi foto 500 x 500 px</div>
+                                <div class="row">
+                                    <div class="col-lg-2 col-6">
+                                        <img src="{{asset('assets/img/placeholder/Utama.png')}}" alt="">
+                                    </div>
+                                    <div class="col-lg-2 col-6">
+                                        <img src="{{asset('assets/img/placeholder/Depan.png')}}" alt="">
+                                    </div>
+                                    <div class="col-lg-2 col-6">
+                                        <img src="{{asset('assets/img/placeholder/Kanan.png')}}" alt="">
+                                    </div>
+                                    <div class="col-lg-2 col-6">
+                                        <img src="{{asset('assets/img/placeholder/Belakang.png')}}" alt="">
+                                    </div>
+                                    <div class="col-lg-2 col-6">
+                                        <img src="{{asset('assets/img/placeholder/Kiri.png')}}" alt="">
+                                    </div>
+                                    <div class="col-lg-2 col-6">
+                                        <img src="{{asset('assets/img/placeholder/Detail.png')}}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card card-form">
+                            <div class="card-body">
+                                <div class="form-title">Detail Item</div>
+                                <div class="form-sub-title">Detail kondisi, ukuran, dan kelengkapan</div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label>Deskripsi</label>
+                                            <textarea class="form-control" style="height: 200px"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-group">
+                                            <label>Kategori</label>
+                                            <select class="form-control select2">
+                                                <option>Kategori 1</option>
+                                                <option>Kategori 2</option>
+                                                <option>Kategori 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-group">
+                                            <label>Brand</label>
+                                            <select class="form-control select2">
+                                                <option>Brand 1</option>
+                                                <option>Brand 2</option>
+                                                <option>Brand 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-group">
+                                            <label>Tipe</label>
+                                            <select class="form-control select2">
+                                                <option>Tipe 1</option>
+                                                <option>Tipe 2</option>
+                                                <option>Tipe 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -55,5 +145,21 @@
 @endsection
 
 @section('js')
-
+<script>
+    if(jQuery().summernote) {
+        $(".summernote").summernote({
+            dialogsInBody: true,
+            minHeight: 250,
+        });
+        $(".summernote-simple").summernote({
+            dialogsInBody: true,
+            minHeight: 150,
+            toolbar: [
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['strikethrough']],
+                ['para', ['paragraph']]
+            ]
+        });
+    }
+</script>
 @endsection

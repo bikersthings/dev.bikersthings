@@ -1,7 +1,12 @@
+
 /* Global Extended start */
 
 ::placeholder {
   opacity: 0.4!Important;
+}
+
+input:focus , textarea:focus , select:focus {
+  border: 1px solid var(--primary)!important;
 }
 
 /* Global Extended end */
@@ -163,6 +168,11 @@
 
 .card-form .radio-form > div {
   margin-right: 20px;
+}
+
+.card-form img {
+  width: 100%;
+  margin-bottom: 24px;
 }
 
 /* Stisla Form end */
