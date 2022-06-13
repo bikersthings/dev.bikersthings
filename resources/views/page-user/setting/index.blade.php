@@ -85,6 +85,15 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12">
+                        <div class="card card-form">
+                            <div class="card-body">
+                                <div class="form-title">Contact dan Sosial Media</div>
+                                <div class="form-sub-title">Kontak yang digunakan untuk menghubungi kamu</div>
+                                <img src="{{asset('assets/img/placeholder/banner.png')}}" alt="">
+                            </div>
+                        </div>           
+                    </div>
                 </div>
             </div>
         </section>
