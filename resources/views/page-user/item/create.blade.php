@@ -41,9 +41,9 @@
                         <div class="card card-form">
                             <div class="card-body">
                                 <div class="form-title">Nama Item</div>
-                                <div class="form-sub-title">Nama Item harus terdiri dari Merek dan Tipe.</div>
+                                <div class="form-sub-title">Nama Item harus terdiri dari Brand dan Tipe.</div>
                                 <div class="form-group mb-0">
-                                    <input type="text" class="form-control" placeholder="AGV (Merk) + Pista GP Misano 2015 (Tipe)   /   KYT (Merk) + Kyoto (Tipe)   /   SENA (Merk) + 50r (Tipe)">
+                                    <input type="text" class="form-control" placeholder="AGV (Brand) + Pista GP Misano 2015 (Tipe)   /   KYT (Brand) + Kyoto (Tipe)   /   SENA (Brand) + 50r (Tipe)">
                                 </div>
                             </div>
                         </div>

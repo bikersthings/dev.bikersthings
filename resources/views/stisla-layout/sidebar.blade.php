@@ -12,7 +12,7 @@
 
         <ul class="sidebar-menu">
 
-            <li class="{{ Request::is('*item*') ? 'active' : '' }}">
+            <li class="{{ Request::is('*item*', '/') ? 'active' : '' }}">
                 <a class="nav-link" href="/item"><i class="fas fa-boxes"></i> <span>Items</span></a>
             </li>
             <li class="{{ Request::is('*icebox*') ? 'active' : '' }}">
