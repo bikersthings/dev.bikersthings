@@ -11,7 +11,7 @@
                 <h2 class="section-title">Setting Profile</h2>
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="card card-form">
+                        <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title mb-4">Foto Profile</div>
                                 <div class="radio-form">
@@ -21,7 +21,7 @@
                         </div>
                     </div>
                     <div class="col-lg-8">
-                        <div class="card card-form">
+                        <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title mb-4">Data Profile</div>
                                 <div class="form-group">
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <div class="card card-form">
+                        <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title">Contact dan Sosial Media</div>
                                 <div class="form-sub-title">Kontak yang digunakan untuk menghubungi kamu</div>
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="card card-form">
+                        <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title">Contact dan Sosial Media</div>
                                 <div class="form-sub-title">Kontak yang digunakan untuk menghubungi kamu</div>

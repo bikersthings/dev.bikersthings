@@ -10,7 +10,7 @@
             <div class="section-body">
                 <div class="row">
                     <div class="col-12">
-                        <div class="card card-form">
+                        <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title">Saya Ingin</div>
                                 <div class="form-sub-title">WTS untuk item dijual, dan WTB untuk item dibeli/dicari.</div>
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="card card-form">
+                        <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title">Nama Item</div>
                                 <div class="form-sub-title">Nama Item harus terdiri dari Brand dan Tipe.</div>
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="card card-form">
+                        <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title">Harga Item</div>
                                 <div class="form-sub-title">Harga Jual atau Budget Pembelian</div>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="card card-form">
+                        <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title">Foto Item</div>
                                 <div class="form-sub-title">Rekomendasi foto 500 x 500 px</div>
@@ -93,7 +93,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="card card-form">
+                        <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title">Detail Item</div>
                                 <div class="form-sub-title">Detail kondisi, ukuran, dan kelengkapan</div>
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                     <div class="col-12 text-right">
-                        <div class="card">
+                        <div class="card card-form card-primary">
                             <div class="card-body">
                                 <button class="btn btn-success">Simpan</button>
                             </div>

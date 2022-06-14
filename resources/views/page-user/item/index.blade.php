@@ -25,7 +25,7 @@
                 <a href="{{('/user/item/create')}}" class="btn btn-primary mb-4">Tambah Item</a>
                 <div class="row">
                     <div class="col-12">
-                    <div class="card">
+                    <div class="card card-primary">
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-striped" id="dataTable">
@@ -49,9 +49,9 @@
                                             1
                                         </td>
                                         <td class="text-center">
-                                            <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="" style="width: 300px; border-radius: 10px">
+                                            <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="" style="width: 150px; border-radius: 10px">
                                             <br>
-                                            <div class="badge badge-primary mt-2">Create a mobile app</div>
+                                            <div class="badge badge-primary mt-2">Nama Item</div>
                                         </td>
                                         <td class="align-middle">
                                             Rp [90.000.000]
@@ -81,9 +81,9 @@
                                             1
                                         </td>
                                         <td class="text-center">
-                                            <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="" style="width: 300px; border-radius: 10px">
+                                            <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="" style="width: 150px; border-radius: 10px">
                                             <br>
-                                            <div class="badge badge-primary mt-2">Create a mobile app</div>
+                                            <div class="badge badge-primary mt-2">Nama Item</div>
                                         </td>
                                         <td class="align-middle">
                                             Rp [90.000.000]
@@ -113,9 +113,9 @@
                                             1
                                         </td>
                                         <td>
-                                            <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="" style="width: 300px; border-radius: 10px">
+                                            <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="" style="width: 150px; border-radius: 10px">
                                             <br>
-                                            <div class="badge badge-primary mt-2">Create a mobile app</div>
+                                            <div class="badge badge-primary mt-2">Nama Item</div>
                                         </td>
                                         <td class="align-middle">
                                             Rp [90.000.000]
