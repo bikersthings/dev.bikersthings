@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('page-user.item.index');
+});
+
 Route::group(['prefix' => '/user'], function(){
     
     Route::get('/', function () {
