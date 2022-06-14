@@ -111,7 +111,7 @@
         $("#swalBoost").click(function() {
             swal({
                 title: 'Boost item?',
-                text: 'Boost! Voucher akan terpakai, dan status item akan menjadi Boost!',
+                text: 'Boost! voucher akan terpakai, dan status item akan menjadi Boosted!',
                 icon: 'info',
                 buttons: true,
                 dangerMode: true,
@@ -119,12 +119,12 @@
             .then((willDelete) => {
                 if (willDelete) {
                     swal({
-                        text: 'Satus item menjadi Boost!',
+                        text: 'Status item menjadi Boosted!',
                         icon: 'success',
                     });
                 } else {
                     swal({
-                        text: 'Satus item masih reguler',
+                        text: 'Status item masih reguler',
                         icon: 'warning',
                     });
                 }

@@ -8,19 +8,26 @@
                 <h1>Setting Profile</h1>
             </div>
             <div class="section-body">
-                <h2 class="section-title">Setting Profile</h2>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="card card-form card-primary">
                             <div class="card-body">
-                                <div class="form-title mb-4">Foto Profile</div>
-                                <div class="radio-form">
-                                    <img src="{{asset('assets/img/placeholder/Utama.png')}}" alt="">
-                                </div>
+                                <div class="form-title">Foto Profile</div>
+                                <div class="form-sub-title">300px X 300px</div>
+                                <img src="{{asset('assets/img/placeholder/Utama.png')}}" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-9">
+                        <div class="card card-form card-primary">
+                            <div class="card-body">
+                                <div class="form-title">Big Banner</div>
+                                <div class="form-sub-title">1000px X 250px</div>
+                                <img src="{{asset('assets/img/placeholder/banner.png')}}" alt="">
+                            </div>
+                        </div>           
+                    </div>
+                    <div class="col-12">
                         <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title mb-4">Data Profile</div>
@@ -84,15 +91,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="card card-form card-primary">
-                            <div class="card-body">
-                                <div class="form-title">Contact dan Sosial Media</div>
-                                <div class="form-sub-title">Kontak yang digunakan untuk menghubungi kamu</div>
-                                <img src="{{asset('assets/img/placeholder/banner.png')}}" alt="">
-                            </div>
-                        </div>           
                     </div>
                 </div>
             </div>
