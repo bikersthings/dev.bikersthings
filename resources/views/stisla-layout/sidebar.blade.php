@@ -7,7 +7,7 @@
             </a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
-            <a href="/">MPE</a>
+            <a href="/">BKT</a>
         </div>
 
         <ul class="sidebar-menu">

@@ -176,3 +176,16 @@ input:focus , textarea:focus , select:focus {
 }
 
 /* Stisla Form end */
+
+
+/* SWAL start */
+
+.swal-button.swal-button--confirm {
+  background-color: var(--primary);
+}
+
+.swal-button--danger:not([disabled]):hover {
+  background-color: var(--secondary);
+}
+
+/* SWAL end */

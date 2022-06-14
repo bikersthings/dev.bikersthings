@@ -141,7 +141,7 @@
                     <div class="col-12 text-right">
                         <div class="card card-form card-primary">
                             <div class="card-body">
-                                <button class="btn btn-success">Simpan</button>
+                                <button class="btn btn-success" id="swalSubmit">Simpan</button>
                             </div>
                         </div>
                     </div>
@@ -168,5 +168,29 @@
             ]
         });
     }
+</script>
+<script>
+    $("#swalSubmit").click(function() {
+        swal({
+            title: 'Post item baru?',
+            text: 'Item akan muncul pada halaman pencarian BIKERSTHINGS',
+            icon: 'info',
+            buttons: true,
+            dangerMode: true,
+        })
+        .then((willDelete) => {
+            if (willDelete) {
+                swal({
+                    text: 'Item berhasil di-post!',
+                    icon: 'success',
+                });
+            } else {
+                swal({
+                    text: 'Item belom di-post',
+                    icon: 'warning',
+                });
+            }
+        });
+    });
 </script>
 @endsection

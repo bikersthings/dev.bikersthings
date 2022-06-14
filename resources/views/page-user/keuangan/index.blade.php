@@ -12,7 +12,102 @@
                     <div class="col-12">
                         <div class="card card-primary">
                             <div class="card-body">
-                                <canvas id="chartKeuangan" height="100"></canvas>
+                                <canvas id="chartKeuangan" height="75"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card card-statistic-1">
+                            <div class="card-icon bg-danger">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="card-wrap">
+                                <div class="card-header">
+                                    <h4>Total Pembelian</h4>
+                                </div>
+                                <div class="card-body">
+                                    Rp [90.000.000]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card card-statistic-1">
+                            <div class="card-icon bg-primary">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="card-wrap">
+                                <div class="card-header">
+                                    <h4>Total Penjualan</h4>
+                                </div>
+                                <div class="card-body">
+                                    Rp [90.000.000]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card card-statistic-1">
+                            <div class="card-icon bg-success">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="card-wrap">
+                                <div class="card-header">
+                                    <h4>Pengeluaran Boost!</h4>
+                                </div>
+                                <div class="card-body">
+                                    Rp [90.000.000]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card card-primary">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped" id="dataTable">
+                                    <thead class="text-center">
+                                        <tr>
+                                            <th>
+                                                #
+                                            </th>
+                                            <th>No Invoice</th>
+                                            <th>Tujuan</th>
+                                            <th>Item</th>
+                                            <th>Nominal</th>
+                                            <th>Tanggal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <td class="align-middle">
+                                                1
+                                            </td>
+                                            <td class="align-middle">
+                                                INV/yyyymmdd/BST/123456789
+                                            </td>
+                                            <td class="align-middle">
+                                                Boosting Item
+                                            </td>
+                                            <td class="align-middle">
+                                                <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="" style="width: 150px; border-radius: 10px"><br>
+                                                <div class="badge badge-primary mt-2">Nama Barang</div>
+                                                <div class="mt-1"><b>[Kategori] - [Brand] - [Tipe]</b></div>
+                                            </td>
+                                            <td class="align-middle">
+                                                Rp [90.000.000]
+                                            </td>
+                                            <td class="align-middle">
+                                                yyyy/mm/dd
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -28,7 +123,7 @@
         
             $("#dataTable").dataTable({
                 "columnDefs": [
-                    { "sortable": false, "targets": [7] }
+                    { "sortable": false, "targets": [0] }
                 ]
             });
 
