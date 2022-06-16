@@ -1,104 +1,74 @@
 html * {
-    font-family: 'K2D', sans-serif;
+  font-family: "K2D", sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-
 
 a:hover {
-    color: black;
+  color: black;
 }
 
-:root {
-    /* Colors */
-    --black: black;
-
+#banner {
+  margin: 20px 0px;
 }
-
-
-/* Topbar start */
 
 #topbar {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
-
 #topbar .left img {
-    width: 75%;
-    height: 75px;
-    object-fit: contain;
+  width: 75%;
+  height: 75px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-
 #topbar .center {
-    display: flex; 
-    align-items: center
+  display: flex;
+  align-items: center;
 }
-
 #topbar .center a {
-    font-weight: bolder;
-    margin-right: 20px;
+  font-weight: bolder;
+  margin-right: 15px;
 }
-
 #topbar .center input {
-    border-radius: 20px;
-    border-color: #00000080;
-    width: 100%;
+  border-radius: 20px;
+  border-color: rgba(0, 0, 0, 0.5019607843);
+  width: 100%;
 }
-
 #topbar .right {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    font-weight: bolder;
-    font-size: smaller;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-weight: bolder;
+  font-size: smaller;
 }
-
-#topbar .right .wrapper {
-}
-
 #topbar .right img {
-    height: 20px;
-    object-fit: contain;
-    margin-right: 5px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 5px;
 }
-
 #topbar .right .dropdown-menu {
-    padding: 10px 12px;
-    border-radius: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+#topbar .right .dropdown-menu .profile-menu {
+  margin: 10px 0px;
+  font-weight: bolder;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+#topbar .right .dropdown-menu i {
+  margin-right: 7px;
 }
 
-#topbar .right .profile .profile-menu {
-    margin: 10px 0px;
-    font-weight: bolder;
-    padding: 5px 10px;
-    border-radius: 10px;
-    /* width: 200px; */
+#banner img {
+  width: 100%;
 }
 
-#topbar .right .profile i {
-    margin-right: 5px;
-}
-
-#topbar .right ul {
-    list-style-type: none;
-    padding: 0px;
-}
-
-/* Topbar end */
-
-
-
-
-
-
-
-
-
-/* Global start */
 .badge-gold {
-    color: white;
-    background: linear-gradient(90deg, #FCD24B 0%, #A7610B 12.9%, #F3B62B 60.53%, #B67C1B 100%);
-}
-/* Global end */
+  color: white;
+  background: linear-gradient(90deg, #FCD24B 0%, #A7610B 12.9%, #F3B62B 60.53%, #B67C1B 100%);
+}/*# sourceMappingURL=visitor-style.css.map */
