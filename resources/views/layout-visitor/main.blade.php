@@ -399,8 +399,12 @@
     <script>
         $(document).ready(function(){
             $('.carousel-wts').owlCarousel({
+                loop:true,
                 dots:false,
                 margin:20,
+                autoplay:true,
+                autoplayTimeout:2500,
+                autoplayHoverPause:true,
                 responsive:{
                     600:{
                         items:6
