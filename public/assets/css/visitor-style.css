@@ -7,15 +7,17 @@ a {
     color: black;
 }
 
+
+a:hover {
+    color: black;
+}
+
 :root {
     /* Colors */
     --black: black;
 
 }
 
-a :hover {
-    text-decoration: none;
-}
 
 /* Topbar start */
 
@@ -67,25 +69,12 @@ a :hover {
     border-radius: 10px;
 }
 
-#topbar .right .badge-nav {
-    color: white;
+#topbar .right .profile .profile-menu {
+    margin: 10px 0px;
     font-weight: bolder;
     padding: 5px 10px;
     border-radius: 10px;
-    width: 200px;
-}
-
-#topbar .right .profile {
-    
-}
-
-#topbar .right .profile > div {
-    margin-bottom: 7px;
-}
-
-#topbar .right .profile > div a {
-    background-color: red;
-    width: 100%;
+    /* width: 200px; */
 }
 
 #topbar .right .profile i {
@@ -109,6 +98,7 @@ a :hover {
 
 /* Global start */
 .badge-gold {
+    color: white;
     background: linear-gradient(90deg, #FCD24B 0%, #A7610B 12.9%, #F3B62B 60.53%, #B67C1B 100%);
 }
 /* Global end */

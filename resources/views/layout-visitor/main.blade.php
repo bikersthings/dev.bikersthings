@@ -39,24 +39,43 @@
                         Hi, Tubagus Store!
                     </div>
                     <div class="dropdown-menu dropdown-menu-end profile" style="">
-                        <div class="badge-nav badge-gold">
-                            Gold Member
-                        </div>
-                        <div>
-                            <a href="">
+                        <a href="">
+                            <div class="profile-menu badge-gold">
+                                Gold Member
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="profile-menu">
                                 <i class="fas fa-boxes"></i> Kelola Toko
-                            </a>
-                        </div>
-                        <div>
-                            <a href="">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="profile-menu">
                                 <i class="fas fa-gifts"></i> Ice box
-                            </a>
-                        </div>
-                        <div>
-                            <a href="">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="profile-menu">
                                 <i class="fas fa-user-cog"></i> Setting Profile
-                            </a>
-                        </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <a href="">
+                            <div class="profile-menu">
+                                <i class="fas fa-ticket-alt"></i> Ice Coupon : 200
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="profile-menu">
+                                <i class="fas fa-rocket"></i> Boost! Voucher : 50
+                            </div>
+                        </a>
+                        <hr>
+                        <a href="" class="">
+                            <div class="profile-menu text-center btn btn-danger">
+                                <i class="fas fa-sign-out-alt"></i> LOGOUT
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
