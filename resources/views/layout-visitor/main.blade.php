@@ -85,16 +85,16 @@
         <div class="" >
             <div class="owl-carousel carousel-banner">
                 <div class="item">
-                    <img src="assets/img/banner/ban1.png" alt="">
+                    <img src="{{asset('assets/img/banner/ban1.png')}}" alt="">
                 </div>
                 <div class="item">
-                    <img src="assets/img/banner/ban2.png" alt="">
+                    <img src="{{asset('assets/img/banner/ban2.png')}}" alt="">
                 </div>
                 <div class="item">
-                    <img src="assets/img/banner/ban3.png" alt="">
+                    <img src="{{asset('assets/img/banner/ban3.png')}}" alt="">
                 </div>
                 <div class="item">
-                    <img src="assets/img/banner/ban4.png" alt="">
+                    <img src="{{asset('assets/img/banner/ban4.png')}}" alt="">
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
             <div class="owl-carousel carousel-wts">
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb1.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -129,7 +129,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb2.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -139,7 +139,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb3.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb4.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -159,7 +159,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb5.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb5.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -169,7 +169,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb1.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -179,7 +179,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb2.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -189,7 +189,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb3.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -224,7 +224,7 @@
             <div class="owl-carousel carousel-wts">
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb1.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -234,7 +234,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb2.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -244,7 +244,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb3.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -254,7 +254,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb4.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -264,7 +264,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb5.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb5.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -274,7 +274,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb1.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -284,7 +284,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb2.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -294,7 +294,7 @@
                 </div>
                 <div class="item">
                     <div class="card card-item">
-                        <img src="assets/img/thumbnail/thumb3.png" class="card-img-top">
+                        <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title">AGV Pista GPRR</p>
                             <p class="card-price">Rp. 90.000.000</p>
@@ -316,7 +316,7 @@
                 <div class="col-lg-2 col-6">
                     <a href="">
                         <div class="card card-item">
-                            <img src="assets/img/thumbnail/thumb5.png" class="card-img-top">
+                            <img src="{{asset('assets/img/thumbnail/thumb5.png')}}" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -328,7 +328,7 @@
                 <div class="col-lg-2 col-6">
                     <a href="">
                         <div class="card card-item">
-                            <img src="assets/img/thumbnail/thumb4.png" class="card-img-top">
+                            <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -340,7 +340,7 @@
                 <div class="col-lg-2 col-6">
                     <a href="">
                         <div class="card card-item">
-                            <img src="assets/img/thumbnail/thumb3.png" class="card-img-top">
+                            <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -352,7 +352,7 @@
                 <div class="col-lg-2 col-6">
                     <a href="">
                         <div class="card card-item">
-                            <img src="assets/img/thumbnail/thumb2.png" class="card-img-top">
+                            <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -364,7 +364,7 @@
                 <div class="col-lg-2 col-6">
                     <a href="">
                         <div class="card card-item">
-                            <img src="assets/img/thumbnail/thumb1.png" class="card-img-top">
+                            <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -376,7 +376,7 @@
                 <div class="col-lg-2 col-6">
                     <a href="">
                         <div class="card card-item">
-                            <img src="assets/img/thumbnail/thumb2.png" class="card-img-top">
+                            <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
