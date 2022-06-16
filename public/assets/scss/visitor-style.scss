@@ -83,6 +83,45 @@ a:hover {
     }
 }
 
+// Card Item start
+
+.card-item {
+
+    font-size: smaller;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+
+    img {
+        border-radius: 7px 7px 0px 0px;
+    }
+
+    .card-body {
+        padding: 12px 20px;
+
+        .card-title {
+            margin-bottom: 0px;
+            font-weight: bolder;
+            
+        }
+        .card-price {
+            margin: 5px 0px;
+            text-align: right;
+            color: red;
+            font-weight: bolder;
+        }
+        .card-location {
+            margin-bottom: 0px;
+            i {
+                color: #FF0000;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+// Card Item end
+
+
 // Topbar end
 
 
@@ -90,5 +129,20 @@ a:hover {
 .badge-gold {
     color: white;
     background: linear-gradient(90deg, #FCD24B 0%, #A7610B 12.9%, #F3B62B 60.53%, #B67C1B 100%);
+}
+
+.col-lg-2, .col-6 {
+    margin-bottom: 24px;
+}
+
+.head-section {
+    background: linear-gradient(90.02deg, #04465F 0%, #189BB4 100%); 
+    color: white;
+    display:flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    border-radius: 10px 10px 0px 0px; 
+    margin-bottom: 12px
 }
 // Global end

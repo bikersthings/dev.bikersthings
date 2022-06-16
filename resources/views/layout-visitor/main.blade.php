@@ -83,18 +83,307 @@
 
     <section id="banner">
         <div class="" >
-            <div class="owl-carousel my-carousel">
-                <div class="my-carousel-item">
+            <div class="owl-carousel carousel-banner">
+                <div class="item">
                     <img src="assets/img/banner/ban1.png" alt="">
                 </div>
-                <div class="my-carousel-item">
+                <div class="item">
                     <img src="assets/img/banner/ban2.png" alt="">
                 </div>
-                <div class="my-carousel-item">
+                <div class="item">
                     <img src="assets/img/banner/ban3.png" alt="">
                 </div>
-                <div class="my-carousel-item">
+                <div class="item">
                     <img src="assets/img/banner/ban4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wts-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wrapper head-section" style="">
+                        <div>
+                            <b>WTS</b> (Want To Sell)
+                        </div>
+                        <div>
+                            Lihat Semua <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="owl-carousel carousel-wts">
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb1.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb2.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb3.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb4.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb5.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb1.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb2.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb3.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <hr style="height: 10px; background: linear-gradient(90.02deg, #04465F 0%, #189BB4 100%);">
+    </div>
+
+    <section id="wtb-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wrapper head-section" style="">
+                        <div>
+                            <b>WTB</b> (Want To Buy)
+                        </div>
+                        <div>
+                            Lihat Semua <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="owl-carousel carousel-wts">
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb1.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb2.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb3.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb4.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb5.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb1.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb2.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card-item">
+                        <img src="assets/img/thumbnail/thumb3.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">AGV Pista GPRR</p>
+                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <hr style="height: 10px; background: linear-gradient(90.02deg, #04465F 0%, #189BB4 100%);">
+    </div>
+
+    <section id="all-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-6">
+                    <a href="">
+                        <div class="card card-item">
+                            <img src="assets/img/thumbnail/thumb5.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-title">AGV Pista GPRR</p>
+                                <p class="card-price">Rp. 90.000.000</p>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <a href="">
+                        <div class="card card-item">
+                            <img src="assets/img/thumbnail/thumb4.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-title">AGV Pista GPRR</p>
+                                <p class="card-price">Rp. 90.000.000</p>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <a href="">
+                        <div class="card card-item">
+                            <img src="assets/img/thumbnail/thumb3.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-title">AGV Pista GPRR</p>
+                                <p class="card-price">Rp. 90.000.000</p>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <a href="">
+                        <div class="card card-item">
+                            <img src="assets/img/thumbnail/thumb2.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-title">AGV Pista GPRR</p>
+                                <p class="card-price">Rp. 90.000.000</p>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <a href="">
+                        <div class="card card-item">
+                            <img src="assets/img/thumbnail/thumb1.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-title">AGV Pista GPRR</p>
+                                <p class="card-price">Rp. 90.000.000</p>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <a href="">
+                        <div class="card card-item">
+                            <img src="assets/img/thumbnail/thumb2.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-title">AGV Pista GPRR</p>
+                                <p class="card-price">Rp. 90.000.000</p>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -109,23 +398,19 @@
 
     <script>
         $(document).ready(function(){
-            // $('.my-carousel').owlCarousel({
-            //     center: true,
-            //     // margin:10,
-            //     items: 2,
-            //     loop: true,
-            //     autoplay: true,
-            //     // merge:true,
-            //     responsive:{
-            //         0:{
-            //             items: 2
-            //         },
-            //         600:{
-            //             items: 1
-            //         }
-            //     }
-            // });
-            $('.my-carousel').owlCarousel({
+            $('.carousel-wts').owlCarousel({
+                dots:false,
+                margin:20,
+                responsive:{
+                    600:{
+                        items:6
+                    },
+                    0:{
+                        items:2
+                    }
+                }
+            });
+            $('.carousel-banner').owlCarousel({
                 center: true,
                 items:2,
                 loop:true,
@@ -137,6 +422,7 @@
                     }
                 }
             });
+
         })
     </script>
 
