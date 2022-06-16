@@ -1,0 +1,114 @@
+html * {
+    font-family: 'K2D', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+:root {
+    /* Colors */
+    --black: black;
+
+}
+
+a :hover {
+    text-decoration: none;
+}
+
+/* Topbar start */
+
+#topbar {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#topbar .left img {
+    width: 75%;
+    height: 75px;
+    object-fit: contain;
+}
+
+#topbar .center {
+    display: flex; 
+    align-items: center
+}
+
+#topbar .center a {
+    font-weight: bolder;
+    margin-right: 20px;
+}
+
+#topbar .center input {
+    border-radius: 20px;
+    border-color: #00000080;
+    width: 100%;
+}
+
+#topbar .right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+#topbar .right .wrapper {
+}
+
+#topbar .right img {
+    height: 20px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+#topbar .right .dropdown-menu {
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+#topbar .right .badge-nav {
+    color: white;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+#topbar .right .profile {
+    
+}
+
+#topbar .right .profile > div {
+    margin-bottom: 7px;
+}
+
+#topbar .right .profile > div a {
+    background-color: red;
+    width: 100%;
+}
+
+#topbar .right .profile i {
+    margin-right: 5px;
+}
+
+#topbar .right ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+/* Topbar end */
+
+
+
+
+
+
+
+
+
+/* Global start */
+.badge-gold {
+    background: linear-gradient(90deg, #FCD24B 0%, #A7610B 12.9%, #F3B62B 60.53%, #B67C1B 100%);
+}
+/* Global end */

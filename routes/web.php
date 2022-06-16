@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('page-user.item.index');
+    return view('layout-visitor.main');
 });
 
 Route::group(['prefix' => '/user'], function(){

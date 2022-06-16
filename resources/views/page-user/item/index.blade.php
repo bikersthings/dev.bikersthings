@@ -1,4 +1,4 @@
-@extends('stisla-layout.main')
+@extends('layout-stisla.main')
 
 @section('content')
     <!-- Main Content -->
