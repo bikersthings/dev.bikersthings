@@ -30,14 +30,14 @@
     <section id="topbar">
         <div class="container">
             <div class="row">
-                <div class="col-3 left">
+                <div class="col-lg-3 left">
                     <img src="{{asset('assets/img/logo/icon.png')}}" alt="">
                 </div>
-                <div class="col-6 center" style="">
+                <div class="col-lg-6 center" style="">
                     <a href="">Filter</a>
                     <input class="form-control" type="text" placeholder="Agv, Kyoto, Wearpack">
                 </div>
-                <div class="col-3 right" style="">
+                <div class="col-lg-3 right" style="">
                     <div type="button" class="wrapper dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="{{asset('assets/img/logo/tab-icon.png')}}" alt="">
                         Hi, Tubagus Store!
