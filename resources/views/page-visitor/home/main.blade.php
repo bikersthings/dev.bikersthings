@@ -38,7 +38,7 @@
     <div class="container">
         <div class="owl-carousel carousel-wts">
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -50,7 +50,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -62,7 +62,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -74,7 +74,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb5.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -86,7 +86,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -98,7 +98,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -110,7 +110,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -122,7 +122,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -159,7 +159,7 @@
     <div class="container">
         <div class="owl-carousel carousel-wts">
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -171,7 +171,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -183,7 +183,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -195,7 +195,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -207,7 +207,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb5.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -219,7 +219,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -231,7 +231,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -243,7 +243,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -280,7 +280,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-2 col-6">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <div class="card-img">
                             <img src="{{asset('assets/img/thumbnail/thumb5.png')}}">
@@ -294,7 +294,7 @@
                 </a>
             </div>
             <div class="col-lg-2 col-6">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -306,7 +306,7 @@
                 </a>
             </div>
             <div class="col-lg-2 col-6">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -318,7 +318,7 @@
                 </a>
             </div>
             <div class="col-lg-2 col-6">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -330,7 +330,7 @@
                 </a>
             </div>
             <div class="col-lg-2 col-6">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -342,7 +342,7 @@
                 </a>
             </div>
             <div class="col-lg-2 col-6">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -354,7 +354,7 @@
                 </a>
             </div>
             <div class="col-lg-2 col-6">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb5.png')}}" class="card-img-top">
                         <div class="card-body">
@@ -366,7 +366,7 @@
                 </a>
             </div>
             <div class="col-lg-2 col-6">
-                <a href="">
+                <a href="/item-detail">
                     <div class="card card-item">
                         <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
                         <div class="card-body">
