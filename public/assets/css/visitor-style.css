@@ -11,12 +11,46 @@ a:hover {
   color: black;
 }
 
-#banner {
-  margin: 20px 0px;
+#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item-foto, #detail-item-info, #suggest-toko, #suggest-serupa {
+  margin: 48px 0px;
+}
+
+.badge-gold {
+  color: white;
+  background: linear-gradient(90deg, #FCD24B 0%, #A7610B 12.9%, #F3B62B 60.53%, #B67C1B 100%);
+}
+
+.col-lg-2, .col-6 {
+  margin-bottom: 24px;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding: 5px 50px;
+}
+
+.head-section {
+  background: linear-gradient(90.02deg, #04465F 0%, #189BB4 100%);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 10px 10px 0px 0px;
+  margin-bottom: 24px;
 }
 
 #topbar {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  top: 0;
 }
 #topbar .left img {
   width: 75%;
@@ -68,6 +102,125 @@ a:hover {
   width: 100%;
 }
 
+#detail-item-foto .card {
+  border: none;
+  background-color: transparent;
+}
+#detail-item-foto .card .card-header, #detail-item-foto .card .card-body {
+  padding: 0px;
+  border-radius: 10px;
+}
+#detail-item-foto .card .card-header img, #detail-item-foto .card .card-body img {
+  border-radius: 10px;
+}
+#detail-item-info .item-title {
+  font-weight: bolder;
+  font-size: 36px;
+}
+#detail-item-info .item-price {
+  font-weight: bolder;
+  font-size: larger;
+  color: red;
+}
+#detail-item-info hr {
+  height: 2px;
+  border-radius: 2px;
+}
+#detail-item-info .item-description {
+  height: 250px;
+  overflow: scroll;
+  overflow-x: hidden;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+#detail-item-info .item-description::-webkit-scrollbar {
+  width: 15px;
+}
+#detail-item-info .item-description::-webkit-scrollbar-track {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+#detail-item-info .item-description::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  border-radius: 10px;
+}
+#detail-item-info .item-description::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+}
+#detail-item-info .item-seller {
+  font-weight: bolder;
+}
+#detail-item-info .item-seller-nama {
+  color: #1588A7;
+  display: flex;
+  align-items: center;
+}
+#detail-item-info .item-seller-nama img {
+  height: 30px;
+}
+#detail-item-info .item-seller-nama b {
+  color: black;
+}
+#detail-item-info .item-seller-lokasi {
+  display: flex;
+  align-items: center;
+}
+#detail-item-info .item-seller-lokasi i {
+  color: red;
+  margin-right: 10px;
+}
+#detail-item-info .seller-sosmed button {
+  width: 100%;
+  padding: 5px 0px;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border-color: transparent;
+}
+#detail-item-info .seller-sosmed button:hover {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  color: white;
+}
+
+#footer {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+#footer img {
+  width: 100%;
+}
+#footer .footer-title {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+#footer .contact-us {
+  font-weight: bolder;
+}
+#footer .contact-us li {
+  margin-bottom: 10px;
+}
+#footer .contact-us li a {
+  color: #636363;
+}
+#footer .contact-us li a i {
+  margin-right: 10px;
+}
+#footer .contact-us li a:hover {
+  color: #1588A7;
+}
+#footer ul {
+  list-style-type: none;
+  padding: 0px;
+}
+#footer ul li img {
+  width: auto;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
 .card-item {
   font-size: smaller;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -75,6 +228,9 @@ a:hover {
 }
 .card-item img {
   border-radius: 7px 7px 0px 0px;
+}
+.card-item .card-img img {
+  width: 100%;
 }
 .card-item .card-body {
   padding: 12px 20px;
@@ -95,24 +251,4 @@ a:hover {
 .card-item .card-body .card-location i {
   color: #FF0000;
   margin-right: 5px;
-}
-
-.badge-gold {
-  color: white;
-  background: linear-gradient(90deg, #FCD24B 0%, #A7610B 12.9%, #F3B62B 60.53%, #B67C1B 100%);
-}
-
-.col-lg-2, .col-6 {
-  margin-bottom: 24px;
-}
-
-.head-section {
-  background: linear-gradient(90.02deg, #04465F 0%, #189BB4 100%);
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-radius: 10px 10px 0px 0px;
-  margin-bottom: 12px;
 }/*# sourceMappingURL=visitor-style.css.map */

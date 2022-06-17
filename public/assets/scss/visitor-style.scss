@@ -1,4 +1,7 @@
+// Global start
+
 $primary: #1588A7;
+$gradient : linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
 
 html * {
     font-family: 'K2D', sans-serif;
@@ -14,14 +17,58 @@ a:hover {
     color: black;
 }
 
-#banner {
-    margin: 20px 0px;
+#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item-foto, #detail-item-info, #suggest-toko, #suggest-serupa {
+    margin: 48px 0px;
 }
+
+.badge-gold {
+    color: white;
+    background: linear-gradient(90deg, #FCD24B 0%, #A7610B 12.9%, #F3B62B 60.53%, #B67C1B 100%);
+}
+
+.col-lg-2, .col-6 {
+    margin-bottom: 24px;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 5px 50px;
+}
+
+.head-section {
+    background: linear-gradient(90.02deg, #04465F 0%, #189BB4 100%); 
+    color: white;
+    display:flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    border-radius: 10px 10px 0px 0px; 
+    margin-bottom: 24px
+}
+
+// Global end
+
+
+
+
+
+
+
+
+
 
 // Topbar start
 
 #topbar {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 100%;
+    position: sticky;
+    background-color: white;
+    top: 0;
 
     .left img {
         width: 75%;
@@ -77,11 +124,213 @@ a:hover {
     }
 }
 
+// Topbar end
+
+
+
+
+
+
+
+
+
+
+// Banner start
+
 #banner {
+    // margin-top: 0px;
     img {
         width: 100%;
     }
 }
+
+// Banner end
+
+
+
+
+
+
+
+
+
+
+
+// Detail Item start
+
+#detail-item {
+    
+    &-foto {
+        .card {
+            // box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+            border: none;
+            background-color: transparent;
+
+            
+            .card-header, .card-body {
+                padding: 0px;
+                border-radius: 10px;
+
+                img {
+                    
+                border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    
+
+    &-info {
+        .item-title {
+            font-weight: bolder;
+            font-size: 36px;
+        }
+        .item-price {
+            font-weight: bolder;
+            font-size: larger;
+            color: red;
+        }
+        hr {
+            height: 2px;
+            border-radius: 2px;
+        }
+        .item-description {
+            height: 250px;
+            overflow: scroll;
+            overflow-x: hidden;
+
+            &::-webkit-scrollbar {
+                width: 15px;
+            }
+              
+            /* Track */
+            &::-webkit-scrollbar-track {
+                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+            }
+               
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: $gradient; 
+                border-radius: 10px;
+            }
+              
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: $gradient; 
+            }
+        }
+        .item-seller {
+            font-weight: bolder;
+            &-nama {
+                color: $primary;
+                // background-color: red;
+                display: flex;
+                align-items: center;
+                img {
+                    height: 30px;
+                }
+                b {
+                    color: black;
+                }
+            }
+            &-lokasi {
+                display: flex;
+                align-items: center;
+                i {
+                    color: red;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .seller-sosmed {
+            button {
+                width: 100%;
+                padding: 5px 0px;
+                background-color: white;
+                color: black;
+                font-weight: bolder;
+                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                border-color: transparent;
+
+                &:hover {
+                    background: $gradient;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}
+
+// Detail Item end
+
+
+
+
+
+
+
+
+
+// Footer start
+
+#footer {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+
+    img {
+        width: 100%;
+    }
+
+    .footer-title {
+        font-weight: bolder;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .contact-us {
+        font-weight: bolder;
+        li {
+            margin-bottom: 10px;
+            a {
+                i {
+                    margin-right: 10px;
+                }
+                color: #636363;
+
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        li {
+            img {
+                width: auto;
+                height: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+}
+
+// Footer end
+
+
+
+
+
+
+
+
+
 
 // Card Item start
 
@@ -93,6 +342,12 @@ a:hover {
 
     img {
         border-radius: 7px 7px 0px 0px;
+    }
+
+    .card-img {
+        img {
+            width: 100%;
+        }
     }
 
     .card-body {
@@ -120,29 +375,3 @@ a:hover {
 }
 
 // Card Item end
-
-
-// Topbar end
-
-
-// Global start
-.badge-gold {
-    color: white;
-    background: linear-gradient(90deg, #FCD24B 0%, #A7610B 12.9%, #F3B62B 60.53%, #B67C1B 100%);
-}
-
-.col-lg-2, .col-6 {
-    margin-bottom: 24px;
-}
-
-.head-section {
-    background: linear-gradient(90.02deg, #04465F 0%, #189BB4 100%); 
-    color: white;
-    display:flex; 
-    flex-direction: row; 
-    justify-content: space-between; 
-    padding: 10px 20px; 
-    border-radius: 10px 10px 0px 0px; 
-    margin-bottom: 12px
-}
-// Global end
