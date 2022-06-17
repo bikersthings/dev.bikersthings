@@ -23,7 +23,11 @@ Route::group(['prefix' => '/'], function(){
     
     Route::get('/item-detail', function () {
         return view('page-visitor.item-detail.main');
-    });    
+    });  
+    
+    Route::get('/toko-detail', function () {
+        return view('page-visitor.toko-detail.main');
+    }); 
 });
 
 // Route Visitor end
