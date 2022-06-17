@@ -2,10 +2,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 left">
-                <img src="{{asset('assets/img/logo/icon.png')}}" alt="">
+                <a href="/">
+                    <img src="{{asset('assets/img/logo/icon.png')}}" alt="">
+                </a>
             </div>
             <div class="col-lg-6 center" style="">
-                <a href="">Filter</a>
+                <a href="/item-filter">Filter</a>
                 <input class="form-control" type="text" placeholder="Agv, Kyoto, Wearpack">
             </div>
             <div class="col-lg-3 right" style="">

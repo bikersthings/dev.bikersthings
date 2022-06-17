@@ -20,10 +20,18 @@ Route::group(['prefix' => '/'], function(){
     Route::get('/', function () {
         return view('page-visitor.home.main');
     });
+
+    Route::get('/item-filter', function () {
+        return view('page-visitor.item-filter.main');
+    }); 
     
     Route::get('/item-detail', function () {
         return view('page-visitor.item-detail.main');
-    });    
+    });  
+    
+    Route::get('/toko-detail', function () {
+        return view('page-visitor.toko-detail.main');
+    }); 
 });
 
 // Route Visitor end
