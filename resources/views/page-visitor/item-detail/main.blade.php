@@ -10,56 +10,56 @@
                         <div class="card">
                             <div class="card-header" style="margin-bottom: 12px">
                                 <div class="owl-carousel carousel-product-top">
-                                    <div class="item">
+                                    <div class="item" data-hash="pic-1">
                                         <a>
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="item">
+                                    <div class="item" data-hash="pic-2">
                                         <a>
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="item">
+                                    <div class="item" data-hash="pic-3">
                                         <a>
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="item">
+                                    <div class="item" data-hash="pic-4">
                                         <a>
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="item">
+                                    <div class="item" data-hash="pic-5">
                                         <a>
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb5.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="item">
+                                    <div class="item" data-hash="pic-6">
                                         <a>
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="item">
+                                    <div class="item" data-hash="pic-7">
                                         <a>
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="item">
+                                    <div class="item" data-hash="pic-8">
                                         <a>
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
@@ -71,56 +71,56 @@
                             <div class="card-body">
                                 <div class="owl-carousel carousel-product-bottom">
                                     <div class="item">
-                                        <a>
+                                        <a href="#pic-1">
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
                                     <div class="item">
-                                        <a>
+                                        <a href="#pic-2">
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
                                     <div class="item">
-                                        <a>
+                                        <a href="#pic-3">
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
                                     <div class="item">
-                                        <a>
+                                        <a href="#pic-4">
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
                                     <div class="item">
-                                        <a>
+                                        <a href="#pic-5">
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb5.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
                                     <div class="item">
-                                        <a>
+                                        <a href="#pic-6">
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
                                     <div class="item">
-                                        <a>
+                                        <a href="#pic-7">
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
                                     <div class="item">
-                                        <a>
+                                        <a href="#pic-8">
                                             <div class="card card-item">
                                                 <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
                                             </div>
@@ -452,36 +452,20 @@
     <script>
         $(document).ready(function(){
             $('.carousel-product-top').owlCarousel({
-                loop:true,
                 dots:false,
-                margin:20,
-                // autoplay:true,
-                autoplayTimeout:2500,
-                autoplayHoverPause:true,
-                responsive:{
-                    600:{
-                        items:1
-                    },
-                    0:{
-                        items:1
-                    }
-                }
+                margin:10,
+                items:1,
+                URLhashListener: true,
+                autoplayHoverPause: true,
+                startPosition: 'URLHash',
             });
             $('.carousel-product-bottom').owlCarousel({
-                loop:true,
                 dots:false,
                 margin:12,
                 autoplay:true,
-                autoplayTimeout:2500,
+                autoplayTimeout:3000,
                 autoplayHoverPause:true,
-                responsive:{
-                    600:{
-                        items:6
-                    },
-                    0:{
-                        items:6
-                    }
-                }
+                items:6
             });
             $('.carousel-suggest').owlCarousel({
             loop:true,
