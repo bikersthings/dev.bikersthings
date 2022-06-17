@@ -387,6 +387,123 @@
                         </div>
                     </a>
                 </div>
+                <div class="col-lg-2 col-6">
+                    <a href="">
+                        <div class="card card-item">
+                            <img src="{{asset('assets/img/thumbnail/thumb5.png')}}" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-title">AGV Pista GPRR</p>
+                                <p class="card-price">Rp. 90.000.000</p>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <a href="">
+                        <div class="card card-item">
+                            <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-title">AGV Pista GPRR</p>
+                                <p class="card-price">Rp. 90.000.000</p>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button class="btn btn-gradient" style="">Muat Lebih Banyak</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row py-4 justify-content-center">
+                <div class="col-lg-4 col-12">
+                    <img src="{{asset('assets/img/logo/icon.png')}}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <div>
+                        <div class="footer-title">
+                            Pembayaran
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="assets/img/footer/payment-bca.png" alt="">
+                            </li>
+                            <li>
+                                <img src="assets/img/footer/payment-bersama.png" alt="">
+                            </li>
+                            <li>
+                                <img src="assets/img/footer/payment-dana.png" alt="">
+                            </li>
+                            <li>
+                                <img src="assets/img/footer/payment-master.png" alt="">
+                            </li>
+                            <li>
+                                <img src="assets/img/footer/payment-paypal.png" alt="">
+                            </li>
+                            <li>
+                                <img src="assets/img/footer/payment-visa.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div>
+                        <div class="footer-title">
+                            Jasa Pengiriman
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="assets/img/footer/cour-gosend.png" alt="">
+                            </li>
+                            <li>
+                                <img src="assets/img/footer/cour-grabex.png" alt="">
+                            </li>
+                            <li>
+                                <img src="assets/img/footer/cour-jne.png" alt="">
+                            </li>
+                            <li>
+                                <img src="assets/img/footer/cour-ninja.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="contact-us">
+                        <div class="footer-title">
+                            Contact Us
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-instagram"></i> BIKERSTHINGS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-whatsapp"></i> 0813-1234-1234
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-envelope"></i> team@bikersthings.com
+                                </a>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <img src="assets/img/footer/cs.png" alt="">
+                </div>
             </div>
         </div>
     </section>
