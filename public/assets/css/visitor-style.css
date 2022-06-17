@@ -11,7 +11,7 @@ a:hover {
   color: black;
 }
 
-#banner, #wts-item, #wtb-item, #all-item, #separator {
+#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item-foto, #detail-item-info {
   margin: 48px 0px;
 }
 
@@ -100,6 +100,89 @@ a:hover {
 
 #banner img {
   width: 100%;
+}
+
+#detail-item-foto .card {
+  border: none;
+  background-color: transparent;
+}
+#detail-item-foto .card .card-header, #detail-item-foto .card .card-body {
+  padding: 0px;
+  border-radius: 10px;
+}
+#detail-item-foto .card .card-header img, #detail-item-foto .card .card-body img {
+  border-radius: 10px;
+}
+#detail-item-info .item-title {
+  font-weight: bolder;
+  font-size: 36px;
+}
+#detail-item-info .item-price {
+  font-weight: bolder;
+  font-size: larger;
+  color: red;
+}
+#detail-item-info hr {
+  height: 2px;
+  border-radius: 2px;
+}
+#detail-item-info .item-description {
+  height: 250px;
+  overflow: scroll;
+  overflow-x: hidden;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+#detail-item-info .item-description::-webkit-scrollbar {
+  width: 15px;
+}
+#detail-item-info .item-description::-webkit-scrollbar-track {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+#detail-item-info .item-description::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  border-radius: 10px;
+}
+#detail-item-info .item-description::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+}
+#detail-item-info .item-seller {
+  font-weight: bolder;
+}
+#detail-item-info .item-seller-nama {
+  color: #1588A7;
+  display: flex;
+  align-items: center;
+}
+#detail-item-info .item-seller-nama img {
+  height: 30px;
+}
+#detail-item-info .item-seller-nama b {
+  color: black;
+}
+#detail-item-info .item-seller-lokasi {
+  display: flex;
+  align-items: center;
+}
+#detail-item-info .item-seller-lokasi i {
+  color: red;
+  margin-right: 10px;
+}
+#detail-item-info .seller-sosmed button {
+  width: 100%;
+  padding: 5px 0px;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border-color: transparent;
+}
+#detail-item-info .seller-sosmed button:hover {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  color: white;
 }
 
 #footer {

@@ -1,6 +1,7 @@
 // Global start
 
 $primary: #1588A7;
+$gradient : linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
 
 html * {
     font-family: 'K2D', sans-serif;
@@ -16,7 +17,7 @@ a:hover {
     color: black;
 }
 
-#banner, #wts-item, #wtb-item, #all-item, #separator {
+#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item-foto, #detail-item-info {
     margin: 48px 0px;
 }
 
@@ -49,6 +50,11 @@ a:hover {
 }
 
 // Global end
+
+
+
+
+
 
 
 
@@ -124,6 +130,11 @@ a:hover {
 
 
 
+
+
+
+
+
 // Banner start
 
 #banner {
@@ -134,6 +145,131 @@ a:hover {
 }
 
 // Banner end
+
+
+
+
+
+
+
+
+
+
+
+// Detail Item start
+
+#detail-item {
+    
+    &-foto {
+        .card {
+            // box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+            border: none;
+            background-color: transparent;
+
+            
+            .card-header, .card-body {
+                padding: 0px;
+                border-radius: 10px;
+
+                img {
+                    
+                border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    
+
+    &-info {
+        .item-title {
+            font-weight: bolder;
+            font-size: 36px;
+        }
+        .item-price {
+            font-weight: bolder;
+            font-size: larger;
+            color: red;
+        }
+        hr {
+            height: 2px;
+            border-radius: 2px;
+        }
+        .item-description {
+            height: 250px;
+            overflow: scroll;
+            overflow-x: hidden;
+
+            &::-webkit-scrollbar {
+                width: 15px;
+            }
+              
+            /* Track */
+            &::-webkit-scrollbar-track {
+                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+            }
+               
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: $gradient; 
+                border-radius: 10px;
+            }
+              
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: $gradient; 
+            }
+        }
+        .item-seller {
+            font-weight: bolder;
+            &-nama {
+                color: $primary;
+                // background-color: red;
+                display: flex;
+                align-items: center;
+                img {
+                    height: 30px;
+                }
+                b {
+                    color: black;
+                }
+            }
+            &-lokasi {
+                display: flex;
+                align-items: center;
+                i {
+                    color: red;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .seller-sosmed {
+            button {
+                width: 100%;
+                padding: 5px 0px;
+                background-color: white;
+                color: black;
+                font-weight: bolder;
+                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                border-color: transparent;
+
+                &:hover {
+                    background: $gradient;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}
+
+// Detail Item end
+
+
+
+
 
 
 
@@ -191,6 +327,11 @@ a:hover {
 
 
 
+
+
+
+
+
 // Card Item start
 
 .card-item {
@@ -234,6 +375,3 @@ a:hover {
 }
 
 // Card Item end
-
-
-// Topbar end
