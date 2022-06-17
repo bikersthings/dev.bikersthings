@@ -13,9 +13,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layout-visitor.main');
+
+// Route Visitor start
+
+Route::group(['prefix' => '/'], function(){
+    Route::get('/', function () {
+        return view('page-visitor.home.main');
+    });
+    
+    Route::get('/item-detail', function () {
+        return view('page-visitor.item-detail.main');
+    });    
 });
+
+// Route Visitor end
+
+
+
+
+
+
+
+
+
+// Route Panel User start
 
 Route::group(['prefix' => '/user'], function(){
     
@@ -50,3 +71,5 @@ Route::group(['prefix' => '/user'], function(){
     });
 
 });
+
+// Route Panel end

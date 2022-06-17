@@ -1,3 +1,5 @@
+// Global start
+
 $primary: #1588A7;
 
 html * {
@@ -15,13 +17,52 @@ a:hover {
 }
 
 #banner, #wts-item, #wtb-item, #all-item, #separator {
-    margin: 75px 0px;
+    margin: 48px 0px;
 }
+
+.badge-gold {
+    color: white;
+    background: linear-gradient(90deg, #FCD24B 0%, #A7610B 12.9%, #F3B62B 60.53%, #B67C1B 100%);
+}
+
+.col-lg-2, .col-6 {
+    margin-bottom: 24px;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 5px 50px;
+}
+
+.head-section {
+    background: linear-gradient(90.02deg, #04465F 0%, #189BB4 100%); 
+    color: white;
+    display:flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    border-radius: 10px 10px 0px 0px; 
+    margin-bottom: 24px
+}
+
+// Global end
+
+
+
+
 
 // Topbar start
 
 #topbar {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 100%;
+    position: sticky;
+    background-color: white;
+    top: 0;
 
     .left img {
         width: 75%;
@@ -79,15 +120,24 @@ a:hover {
 
 // Topbar end
 
+
+
+
+
 // Banner start
 
 #banner {
+    // margin-top: 0px;
     img {
         width: 100%;
     }
 }
 
 // Banner end
+
+
+
+
 
 // Footer start
 
@@ -137,6 +187,10 @@ a:hover {
 
 // Footer end
 
+
+
+
+
 // Card Item start
 
 .card-item {
@@ -147,6 +201,12 @@ a:hover {
 
     img {
         border-radius: 7px 7px 0px 0px;
+    }
+
+    .card-img {
+        img {
+            width: 100%;
+        }
     }
 
     .card-body {
@@ -177,34 +237,3 @@ a:hover {
 
 
 // Topbar end
-
-
-// Global start
-.badge-gold {
-    color: white;
-    background: linear-gradient(90deg, #FCD24B 0%, #A7610B 12.9%, #F3B62B 60.53%, #B67C1B 100%);
-}
-
-.col-lg-2, .col-6 {
-    margin-bottom: 24px;
-}
-
-.btn-gradient {
-    background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
-    color: white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    padding: 5px 50px;
-}
-
-.head-section {
-    background: linear-gradient(90.02deg, #04465F 0%, #189BB4 100%); 
-    color: white;
-    display:flex; 
-    flex-direction: row; 
-    justify-content: space-between; 
-    padding: 10px 20px; 
-    border-radius: 10px 10px 0px 0px; 
-    margin-bottom: 12px
-}
-// Global end
