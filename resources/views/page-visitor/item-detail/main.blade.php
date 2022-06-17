@@ -177,11 +177,13 @@
                         <div class="item-seller">
                             <div class="row">
                                 <div class="col-lg-4 col-6">
-                                    <div class="item-seller-nama" style="">
-                                        <img src="{{asset('assets/img/logo/tab-icon.png')}}" alt="" style="">
-                                        <b style="">RC b19 Store</b>
-                                        <i class="fas fa-certificate" style="color: var(--primary)"></i>
-                                    </div>
+                                    <a href="/toko-detail">
+                                        <div class="item-seller-nama" style="">
+                                            <img src="{{asset('assets/img/logo/tab-icon.png')}}" alt="" style="">
+                                            <b style="">RC b19 Store</b>
+                                            <i class="fas fa-certificate" style="color: var(--primary)"></i>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="col-lg-4 col-6">
                                     <div class="item-seller-lokasi">

@@ -7,7 +7,7 @@
                 </a>
             </div>
             <div class="col-lg-6 center" style="">
-                <a href="">Filter</a>
+                <a href="/item-filter">Filter</a>
                 <input class="form-control" type="text" placeholder="Agv, Kyoto, Wearpack">
             </div>
             <div class="col-lg-3 right" style="">
