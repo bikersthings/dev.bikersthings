@@ -11,7 +11,7 @@ a:hover {
   color: black;
 }
 
-#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item-foto, #detail-item-info, #suggest-toko, #suggest-serupa {
+#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa {
   margin: 48px 0px;
 }
 
@@ -30,6 +30,25 @@ a:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   padding: 5px 50px;
+}
+
+.btn-sosmed {
+  width: 100%;
+  padding: 5px 0px 3px 0px;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border-color: transparent;
+  font-size: smaller;
+}
+.btn-sosmed:hover {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  color: white;
+}
+.btn-sosmed img {
+  margin-right: 10px;
 }
 
 .head-section {
@@ -127,7 +146,7 @@ a:hover {
   border-radius: 2px;
 }
 #detail-item-info .item-description {
-  height: 250px;
+  height: 255px;
   overflow: scroll;
   overflow-x: hidden;
   /* Track */
@@ -151,6 +170,9 @@ a:hover {
 #detail-item-info .item-seller {
   font-weight: bolder;
 }
+#detail-item-info .item-seller > div > div {
+  margin-bottom: 16px;
+}
 #detail-item-info .item-seller-nama {
   color: #1588A7;
   display: flex;
@@ -161,6 +183,7 @@ a:hover {
 }
 #detail-item-info .item-seller-nama b {
   color: black;
+  margin: 0px 10px;
 }
 #detail-item-info .item-seller-lokasi {
   display: flex;
@@ -172,17 +195,21 @@ a:hover {
 }
 #detail-item-info .seller-sosmed button {
   width: 100%;
-  padding: 5px 0px;
+  padding: 5px 0px 3px 0px;
   background-color: white;
   color: black;
   font-weight: bolder;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   border-color: transparent;
+  font-size: smaller;
 }
 #detail-item-info .seller-sosmed button:hover {
   background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
   color: white;
+}
+#detail-item-info .seller-sosmed button img {
+  margin-right: 10px;
 }
 
 #footer {

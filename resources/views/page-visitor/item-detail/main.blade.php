@@ -5,7 +5,7 @@
     <section id="detail-item">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-4 col-12 mb-3">
                     <section id="detail-item-foto">
                         <div class="card">
                             <div class="card-header" style="margin-bottom: 12px">
@@ -175,7 +175,7 @@
                         </div>
                         <hr>
                         <div class="item-seller">
-                            <div class="row mb-3">
+                            <div class="row">
                                 <div class="col-lg-4 col-6">
                                     <div class="item-seller-nama" style="">
                                         <img src="{{asset('assets/img/logo/tab-icon.png')}}" alt="" style="">
@@ -193,16 +193,16 @@
                         <div class="seller-sosmed">
                             <div class="row">
                                 <div class="col-lg-3 col-6">
-                                    <button class="btn btn-primary"><img src="{{asset('assets/img/sosmed/sosmed-wa.png')}}" alt=""> Whats App</button>
+                                    <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-wa.png')}}" alt=""> Whats App</button>
                                 </div>
                                 <div class="col-lg-3 col-6">
-                                    <button class="btn btn-primary"><img src="{{asset('assets/img/sosmed/sosmed-line.png')}}" alt=""> Line</button>
+                                    <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-line.png')}}" alt=""> Line</button>
                                 </div>
                                 <div class="col-lg-3 col-6">
-                                    <button class="btn btn-primary"><img src="{{asset('assets/img/sosmed/sosmed-ig.png')}}" alt=""> Instagram</button>
+                                    <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-ig.png')}}" alt=""> Instagram</button>
                                 </div>
                                 <div class="col-lg-3 col-6">
-                                    <button class="btn btn-primary"><img src="{{asset('assets/img/sosmed/sosmed-tele.png')}}" alt=""> Telegram</button>
+                                    <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-tele.png')}}" alt=""> Telegram</button>
                                 </div>
                             </div>
                         </div>
