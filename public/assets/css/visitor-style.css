@@ -103,6 +103,9 @@ a:hover {
   padding: 10px 12px;
   border-radius: 10px;
 }
+#topbar .right .dropdown-menu a:hover {
+  color: #1588A7;
+}
 #topbar .right .dropdown-menu .profile-menu {
   margin: 10px 0px;
   font-weight: bolder;

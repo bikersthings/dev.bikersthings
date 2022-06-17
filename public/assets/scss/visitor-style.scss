@@ -125,12 +125,18 @@ a:hover {
         .dropdown-menu {
             padding: 10px 12px;
             border-radius: 10px;
+
+            a:hover {
+                color: $primary;
+            }
             
             .profile-menu {
                 margin: 10px 0px;
                 font-weight: bolder;
                 padding: 5px 10px;
                 border-radius: 10px;
+
+                
             }
 
             i {
