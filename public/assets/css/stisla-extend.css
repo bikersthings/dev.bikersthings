@@ -140,6 +140,58 @@ input:focus , textarea:focus , select:focus {
 
 
 
+
+/* Card Item IB start */
+
+.card-item-ib .card-body {
+  padding: 0px;
+}
+
+.card-item-ib img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.card-item-ib .card-footer {
+  padding: 10px 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.card-item-ib .card-footer .nama-ib {
+  color: var(--primary);
+  font-size: larger;
+}
+
+.card-item-ib .card-footer .progress-num {
+  font-size: smaller;
+  letter-spacing: 2px;
+}
+
+.card-item-ib .card-footer button {
+  width: 100%;
+}
+
+.card-item-ib .card-footer .harga-ib {
+  background-color: var(--primary);
+  position: absolute;
+  top: 2%;
+  left: 0%;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 0px 10px 10px 0px;
+  font-size: smaller;
+}
+
+
+
+/* Card Item IB end */
+
+
+
+
+
+
 /* Stisla Form start */
 
 .card-form {

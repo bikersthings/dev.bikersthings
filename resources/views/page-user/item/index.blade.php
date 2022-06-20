@@ -11,20 +11,7 @@
                 </div>
             </div>
             <div class="section-body">
-                {{-- <div class="row">
-                    <div class="col-lg-2 col-6">
-                        <div class="card card-item">
-                            <div class="card-body">
-                                <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="">
-                            </div>
-                            <div class="card-footer">
-                                <div class="nama-item">[Nama Item]</div>
-                                <div class="harga-item my-1 text-right">Rp [20.000.000]</div>
-                                <div class="lokasi-item"><i class="fas fa-map-marker-alt"></i> [Lokasi yang dia pilih]</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
+                
                 <a href="{{('/user/item/create')}}" class="btn btn-primary mb-4">Tambah Item</a>
                 <a href="" class="btn btn-success mb-4">Import Excel Item</a>
                 <a href="" class="btn btn-info mb-4">Beli Boost! Voucher</a>
