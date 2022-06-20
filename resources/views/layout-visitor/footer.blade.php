@@ -1,6 +1,6 @@
 <section id="footer">
     <div class="container">
-        <div class="row py-4 justify-content-center">
+        <div class="row logo py-4 justify-content-center">
             <div class="col-lg-4 col-12">
                 <img src="{{asset('assets/img/logo/icon.png')}}" alt="">
             </div>
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-5">
-                <img src="assets/img/footer/cs.png" alt="">
+                <img src="assets/img/footer/cs.png" alt="" style="width: 100%">
             </div>
         </div>
     </div>
