@@ -11,7 +11,7 @@
                 <input class="form-control" type="text" placeholder="Agv, Kyoto, Wearpack">
             </div>
             <div class="col-lg-3 right" style="">
-                <div type="button" class="wrapper dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <div type="button" class="wrapper dropdown-nav dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="{{asset('assets/img/logo/tab-icon.png')}}" alt="">
                     Hi, Tubagus Store!
                 </div>
@@ -57,3 +57,7 @@
         </div>
     </div>
 </section>
+
+@section('js')
+    
+@endsection

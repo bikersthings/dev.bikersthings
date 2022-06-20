@@ -133,10 +133,19 @@ a:hover {
         font-weight: bolder;
         font-size: smaller;
 
-        img {
-            height: 20px;
-            object-fit: contain;
-            margin-right: 5px;
+        .wrapper {
+            padding: 10px;
+            border-radius: 10px;
+            img {
+                height: 20px;
+                object-fit: contain;
+                margin-right: 5px;
+            }
+        }
+
+        .show:first-child {
+            background: $gradient;
+            color: white;
         }
 
         hr {

@@ -112,11 +112,19 @@ a:hover {
     display: none;
   }
 }
-#topbar .right img {
+#topbar .right .wrapper {
+  padding: 10px;
+  border-radius: 10px;
+}
+#topbar .right .wrapper img {
   height: 20px;
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: 5px;
+}
+#topbar .right .show:first-child {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  color: white;
 }
 #topbar .right hr {
   margin: 0px;
