@@ -91,13 +91,23 @@ a:hover {
     background-color: white;
     top: 0;
 
-    .left img {
-        width: 75%;
-        height: 75px;
-        object-fit: contain;
+    .left {
+        
+        @media only screen and (max-width: 600px) {
+            text-align: center;
+        }
+        img {
+            width: 75%;
+            height: 75px;
+            object-fit: contain;
+            text-align: center;
+        }
     }
 
     .center {
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
         display: flex; 
         align-items: center;
 
@@ -114,6 +124,9 @@ a:hover {
     }
 
     .right {
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
         display: flex;
         justify-content: end;
         align-items: center;
@@ -152,6 +165,69 @@ a:hover {
 }
 
 // Topbar end
+
+
+
+
+
+
+
+
+
+// Bottombar start
+
+#bottombar {
+    @media only screen and (min-width: 600px) {
+        display: none;
+    }
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        list-style: none;
+        padding: 5px 0px;
+        margin: 0px;
+        li {
+            text-align: center;
+            font-size: 12px;
+            a {
+                i {
+                    padding: 10px;
+                    border-radius: 5px;
+                    font-size: 18px;
+                }
+            }
+        }
+        .active {
+            a {
+                color: $gradient;
+                font-weight: bolder;
+                i {
+                    background: $gradient;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+#holder-bottombar {
+    div {
+        height: 66px;
+        @media only screen and (min-width: 600px) {
+            display: none;
+        }
+    }
+}
+
+// Bottombar end
 
 
 

@@ -34,6 +34,7 @@
 <body>
     
     @include('layout-visitor.topbar')
+    @include('layout-visitor.bottombar')
 
     @yield('content')
 
