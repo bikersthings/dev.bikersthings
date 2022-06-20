@@ -20,14 +20,14 @@
                         Gold Member
                     </div>
                     <hr>
+                    <a href="/ice-box">
+                        <div class="profile-menu">
+                            <i class="fas fa-gifts"></i> Ice box
+                        </div>
+                    </a>
                     <a href="/user/item">
                         <div class="profile-menu">
                             <i class="fas fa-boxes"></i> Kelola Item
-                        </div>
-                    </a>
-                    <a href="/user/icebox">
-                        <div class="profile-menu">
-                            <i class="fas fa-gifts"></i> Ice box
                         </div>
                     </a>
                     <a href="/user/setting">

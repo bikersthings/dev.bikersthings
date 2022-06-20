@@ -12,8 +12,8 @@
                     <i class="fas fa-filter"></i> <br> Filter
                 </a>
             </li>
-            <li>
-                <a href="">
+            <li class="{{ Request::is('ice-box') ? 'active' : '' }}">
+                <a href="/ice-box">
                     <i class="fas fa-gifts"></i> <br> Ice Box
                 </a>
             </li>
