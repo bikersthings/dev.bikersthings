@@ -32,6 +32,10 @@ Route::group(['prefix' => '/'], function(){
     Route::get('/toko-detail', function () {
         return view('page-visitor.toko-detail.main');
     }); 
+
+    Route::get('/ice-box', function () {
+        return view('page-visitor.ice-box.main');
+    }); 
 });
 
 // Route Visitor end

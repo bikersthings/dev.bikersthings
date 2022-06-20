@@ -11,7 +11,7 @@ a:hover {
   color: black;
 }
 
-#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page {
+#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box {
   margin: 48px 0px;
 }
 
@@ -334,7 +334,7 @@ a:hover {
   margin-bottom: 30px;
 }
 
-#all-item .col-lg2, #all-item .col-6 {
+#all-item .col-lg2, #all-item .col-6, #ice-box .col-lg2, #ice-box .col-6 {
   margin-bottom: 24px;
 }
 
@@ -368,4 +368,56 @@ a:hover {
 .card-item .card-body .card-location i {
   color: #FF0000;
   margin-right: 5px;
+}
+
+.card-item-ib {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.card-item-ib .card-body {
+  padding: 0px;
+}
+.card-item-ib .card-body img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+.card-item-ib .card-footer {
+  padding: 10px 20px;
+  font-weight: bolder;
+  text-align: center;
+  background-color: transparent;
+}
+.card-item-ib .card-footer .nama-ib {
+  color: #1588A7;
+  font-size: larger;
+}
+.card-item-ib .card-footer .progress-ib {
+  height: 10px;
+}
+.card-item-ib .card-footer .progress-ib .bg-info {
+  background-color: #1588A7 !important;
+}
+.card-item-ib .card-footer .progress-num {
+  font-size: smaller;
+  letter-spacing: 2px;
+}
+.card-item-ib .card-footer button {
+  width: 100%;
+  padding: 2px 0px;
+  font-size: smaller;
+}
+.card-item-ib .card-footer .exp-ib {
+  text-align: right;
+  margin-top: 10px;
+  font-size: smaller;
+  color: #6C757D;
+}
+.card-item-ib .card-footer .harga-ib {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  position: absolute;
+  top: 2%;
+  left: 0%;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 0px 10px 10px 0px;
+  font-size: smaller;
 }/*# sourceMappingURL=visitor-style.css.map */

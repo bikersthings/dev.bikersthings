@@ -23,7 +23,7 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="/user">
                     <i class="fas fa-user-cog"></i> <br> Setting
                 </a>
             </li>

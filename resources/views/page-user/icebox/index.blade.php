@@ -20,7 +20,7 @@
                             <div class="card-footer">
                                 <div class="nama-ib">[Nama Ice Box]</div>
                                 <div class="progress progress-ib my-2">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
                                 </div>
                                 <div class="progress-num my-2">
                                     75/100

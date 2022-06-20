@@ -409,7 +409,6 @@
         $('.carousel-banner').owlCarousel({
             center: true,
             loop:true,
-            stagePadding: 300,
             dots:false,
             responsive:{
                 600:{
@@ -419,8 +418,8 @@
                 },
                 0:{
                     items:1,
-                    stagePadding: 0,
-                    margin:20,
+                    stagePadding: 12,
+                    margin:5,
                 }
             }
         });
