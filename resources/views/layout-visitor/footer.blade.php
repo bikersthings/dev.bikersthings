@@ -54,7 +54,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-7">
                 <div class="contact-us">
                     <div class="footer-title">
                         Contact Us
@@ -79,9 +79,14 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-5">
                 <img src="assets/img/footer/cs.png" alt="">
             </div>
         </div>
+    </div>
+</section>
+
+<section id="holder-bottombar">
+    <div>
     </div>
 </section>
