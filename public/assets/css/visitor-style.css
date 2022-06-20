@@ -118,6 +118,9 @@ a:hover {
      object-fit: contain;
   margin-right: 5px;
 }
+#topbar .right hr {
+  margin: 0px;
+}
 #topbar .right .dropdown-menu {
   padding: 10px 12px;
   border-radius: 10px;

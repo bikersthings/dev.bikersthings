@@ -19,12 +19,17 @@
                     <div class="profile-menu badge-gold">
                         Gold Member
                     </div>
-                    <hr>
                     <a href="/ice-box">
                         <div class="profile-menu">
                             <i class="fas fa-gifts"></i> Ice box
                         </div>
                     </a>
+                    <a href="/ice-box">
+                        <div class="profile-menu">
+                            <i class="fas fa-hourglass-half"></i> Timeline
+                        </div>
+                    </a>
+                    <hr>
                     <a href="/user/item">
                         <div class="profile-menu">
                             <i class="fas fa-boxes"></i> Kelola Item
@@ -42,7 +47,6 @@
                     <div class="profile-menu">
                         <i class="fas fa-rocket"></i> Boost! Voucher : 50
                     </div>
-                    <hr>
                     <a href="">
                         <div class="btn btn-danger"style="width: 100%">
                             <i class="fas fa-sign-out-alt"></i> LOGOUT
