@@ -6,15 +6,8 @@
         <section class="section">
             <div class="section-header">
                 <h1>List Item</h1>
-                <div class="section-header-breadcrumb">
-                    <div class="badge badge-primary">Boost! Voucher : [10]</div>
-                </div>
             </div>
             <div class="section-body">
-                
-                <a href="{{('/user/item/create')}}" class="btn btn-primary mb-4">Tambah Item</a>
-                <a href="" class="btn btn-success mb-4">Import Excel Item</a>
-                <a href="" class="btn btn-info mb-4">Beli Boost! Voucher</a>
                 <div class="row">
                     <div class="col-12">
                     <div class="card card-primary">
@@ -26,48 +19,57 @@
                                             <th>
                                                 #
                                             </th>
+                                            <th>Owner</th>
+                                            <th>Tipe Posting</th>
                                             <th>Produk</th>
-                                            <th>Dilihat</th>
                                             <th>Harga</th>
-                                            <th>Kategori</th>
-                                            <th>Brand</th>
-                                            <th>Tipe</th>
+                                            <th>Deskripsi</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody class="text-center">
                                         <tr>
-                                            <td class="align-middle text-center">
+                                            <td class="align-middle ">
                                                 1
                                             </td>
-                                            <td class="text-center">
+                                            <td class="align-middle ">
+                                                @tebe19_
+                                            </td>
+                                            <td class="align-middle">
+                                                WTS
+                                            </td>
+                                            <td class="">
                                                 <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="" style="width: 150px; border-radius: 10px">
                                                 <br>
                                                 <div class="badge badge-primary mt-2">Nama Item</div>
+                                                <br>
+                                                <div class="mt-1"><b>[Kategori] - [Brand] - [Tipe]</b></div>
                                             </td>
-                                            <td class="align-middle">
-                                                <i class="fas fa-eye mr-1"></i> 2.000
+                                            <td class="align-middle" style="color: red">
+                                                <b>Rp [90.000.000]</b>
                                             </td>
-                                            <td class="align-middle">
-                                                Rp [90.000.000]
-                                            </td>
-                                            <td class="align-middle">
-                                                [Kategori]
-                                            </td>
-                                            <td class="align-middle">
-                                                [Brand]
-                                            </td>
-                                            <td class="align-middle">
-                                                [Tipe]
+                                            <td class="align-middle text-justify">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> <br>
+                                                <ol>
+                                                    <li>
+                                                        Commodi veritatis 
+                                                    </li>
+                                                    <li>
+                                                        epudiandae maxime i
+                                                    </li>
+                                                    <li>
+                                                        ipsa perferendis 
+                                                    </li>
+                                                </ol>
+                                                tempora aperiam iste sit porro voluptatum explicabo minima 
                                             </td>
                                             <td class="align-middle">
                                                 <div class="badge badge-dark">Reguler</div> <br>
                                                 <div class="badge badge-warning">On Hold</div> <br>
                                                 <div class="badge badge-primary">Boosted!</div>
                                             </td>
-                                            <td class="align-middle text-center">
-                                                <button class="btn btn-success" id="swalBoost"><i class="fas fa-rocket"></i></button>
+                                            <td class="align-middle ">
                                                 <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
                                                 <button class="btn btn-danger" id="swalDelete"><i class="fas fa-trash"></i></button>
                                             </td>

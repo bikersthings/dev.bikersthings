@@ -11,7 +11,7 @@ a:hover {
   color: black;
 }
 
-#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page {
+#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box {
   margin: 48px 0px;
 }
 
@@ -70,15 +70,26 @@ a:hover {
   background-color: white;
   top: 0;
 }
+@media only screen and (max-width: 600px) {
+  #topbar .left {
+    text-align: center;
+  }
+}
 #topbar .left img {
   width: 75%;
   height: 75px;
   -o-object-fit: contain;
      object-fit: contain;
+  text-align: center;
 }
 #topbar .center {
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  #topbar .center {
+    display: none;
+  }
 }
 #topbar .center a {
   font-weight: bolder;
@@ -96,11 +107,27 @@ a:hover {
   font-weight: bolder;
   font-size: smaller;
 }
-#topbar .right img {
+@media only screen and (max-width: 600px) {
+  #topbar .right {
+    display: none;
+  }
+}
+#topbar .right .wrapper {
+  padding: 10px;
+  border-radius: 10px;
+}
+#topbar .right .wrapper img {
   height: 20px;
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: 5px;
+}
+#topbar .right .show:first-child {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  color: white;
+}
+#topbar .right hr {
+  margin: 0px;
 }
 #topbar .right .dropdown-menu {
   padding: 10px 12px;
@@ -117,6 +144,55 @@ a:hover {
 }
 #topbar .right .dropdown-menu i {
   margin-right: 7px;
+}
+
+#bottombar {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: white;
+}
+@media only screen and (min-width: 600px) {
+  #bottombar {
+    display: none;
+  }
+}
+#bottombar ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  list-style: none;
+  padding: 5px 0px;
+  margin: 0px;
+}
+#bottombar ul li {
+  text-align: center;
+  font-size: 12px;
+}
+#bottombar ul li a i {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+#bottombar ul .active a {
+  color: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  font-weight: bolder;
+}
+#bottombar ul .active a i {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  color: white;
+}
+
+#holder-bottombar div {
+  height: 66px;
+}
+@media only screen and (min-width: 600px) {
+  #holder-bottombar div {
+    display: none;
+  }
 }
 
 #banner img {
@@ -236,7 +312,7 @@ a:hover {
 #footer {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
-#footer img {
+#footer .logo img {
   width: 100%;
 }
 #footer .footer-title {
@@ -265,11 +341,26 @@ a:hover {
 }
 #footer ul li img {
   width: auto;
-  height: 100%;
+  height: 20px;
   margin-bottom: 30px;
 }
 
-#all-item .col-lg2, #all-item .col-6 {
+@media only screen and (max-width: 600px) {
+  #footer {
+    padding: 40px 0px;
+  }
+}
+@media only screen and (max-width: 600px) and (max-width: 600px) {
+  #footer .logo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #footer .row {
+    text-align: center;
+  }
+}
+#all-item .col-lg2, #all-item .col-6, #ice-box .col-lg2, #ice-box .col-6 {
   margin-bottom: 24px;
 }
 
@@ -281,11 +372,36 @@ a:hover {
 .card-item img {
   border-radius: 7px 7px 0px 0px;
 }
+.card-item .card-img {
+  position: relative;
+  overflow: hidden;
+}
+.card-item .card-img .card-status {
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  color: white;
+  font-weight: bolder;
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  padding: 5px 0px;
+  width: 150px;
+  text-align: center;
+  transform: rotateY(0deg) rotate(-45deg);
+}
+.card-item .card-img .card-badges {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  display: flex;
+}
+.card-item .card-img .card-badges img {
+  width: 24px;
+}
 .card-item .card-img img {
   width: 100%;
 }
 .card-item .card-body {
-  padding: 12px 20px;
+  padding: 12px 15px;
 }
 .card-item .card-body .card-title {
   margin-bottom: 0px;
@@ -303,4 +419,56 @@ a:hover {
 .card-item .card-body .card-location i {
   color: #FF0000;
   margin-right: 5px;
+}
+
+.card-item-ib {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.card-item-ib .card-body {
+  padding: 0px;
+}
+.card-item-ib .card-body img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+.card-item-ib .card-footer {
+  padding: 10px 20px;
+  font-weight: bolder;
+  text-align: center;
+  background-color: transparent;
+}
+.card-item-ib .card-footer .nama-ib {
+  color: #1588A7;
+  font-size: larger;
+}
+.card-item-ib .card-footer .progress-ib {
+  height: 10px;
+}
+.card-item-ib .card-footer .progress-ib .bg-info {
+  background-color: #1588A7 !important;
+}
+.card-item-ib .card-footer .progress-num {
+  font-size: smaller;
+  letter-spacing: 2px;
+}
+.card-item-ib .card-footer button {
+  width: 100%;
+  padding: 2px 0px;
+  font-size: smaller;
+}
+.card-item-ib .card-footer .exp-ib {
+  text-align: right;
+  margin-top: 10px;
+  font-size: smaller;
+  color: #6C757D;
+}
+.card-item-ib .card-footer .harga-ib {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  position: absolute;
+  top: 2%;
+  left: 0%;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 0px 10px 10px 0px;
+  font-size: smaller;
 }/*# sourceMappingURL=visitor-style.css.map */

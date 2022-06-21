@@ -32,6 +32,10 @@ Route::group(['prefix' => '/'], function(){
     Route::get('/toko-detail', function () {
         return view('page-visitor.toko-detail.main');
     }); 
+
+    Route::get('/ice-box', function () {
+        return view('page-visitor.ice-box.main');
+    }); 
 });
 
 // Route Visitor end
@@ -62,6 +66,10 @@ Route::group(['prefix' => '/user'], function(){
         });    
     });
 
+    Route::get('/wishlist', function () {
+        return view('page-user.wishlist.index');
+    });
+
     Route::get('/icebox', function () {
         return view('page-user.icebox.index');
     });
@@ -81,3 +89,35 @@ Route::group(['prefix' => '/user'], function(){
 });
 
 // Route Panel end
+
+
+
+
+
+
+
+
+
+// Route Panel Admin start
+
+Route::group(['prefix' => '/admin'], function(){
+
+    Route::get('/', function () {
+        return view('page-admin.item.index');
+    }); 
+    
+    Route::get('/item', function () {
+        return view('page-admin.item.index');
+    });  
+
+    Route::get('/icebox', function () {
+        return view('page-admin.icebox.index');
+    });  
+
+    Route::get('/user', function () {
+        return view('page-admin.user.index');
+    });  
+
+});
+
+// Route Panel Admin end

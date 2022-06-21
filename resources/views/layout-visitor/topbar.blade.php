@@ -11,7 +11,7 @@
                 <input class="form-control" type="text" placeholder="Agv, Kyoto, Wearpack">
             </div>
             <div class="col-lg-3 right" style="">
-                <div type="button" class="wrapper dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <div type="button" class="wrapper dropdown-nav dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="{{asset('assets/img/logo/tab-icon.png')}}" alt="">
                     Hi, Tubagus Store!
                 </div>
@@ -19,15 +19,20 @@
                     <div class="profile-menu badge-gold">
                         Gold Member
                     </div>
+                    <a href="/ice-box">
+                        <div class="profile-menu">
+                            <i class="fas fa-gifts"></i> Ice box
+                        </div>
+                    </a>
+                    <a href="/ice-box">
+                        <div class="profile-menu">
+                            <i class="fas fa-hourglass-half"></i> Timeline
+                        </div>
+                    </a>
                     <hr>
                     <a href="/user/item">
                         <div class="profile-menu">
                             <i class="fas fa-boxes"></i> Kelola Item
-                        </div>
-                    </a>
-                    <a href="/user/icebox">
-                        <div class="profile-menu">
-                            <i class="fas fa-gifts"></i> Ice box
                         </div>
                     </a>
                     <a href="/user/setting">
@@ -42,7 +47,6 @@
                     <div class="profile-menu">
                         <i class="fas fa-rocket"></i> Boost! Voucher : 50
                     </div>
-                    <hr>
                     <a href="">
                         <div class="btn btn-danger"style="width: 100%">
                             <i class="fas fa-sign-out-alt"></i> LOGOUT
@@ -53,3 +57,7 @@
         </div>
     </div>
 </section>
+
+@section('js')
+    
+@endsection

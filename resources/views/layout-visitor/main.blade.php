@@ -29,11 +29,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 
     <title>BIKERSTHINGS</title>
-    <link rel="icon" type="image/x-icon" href="{{asset('assets/img/logo/tab-icon-bkt.png')}}">
+    <link rel="icon" type="image/x-icon" href="{{asset('assets/img/logo/tab-logo.png')}}">
 </head>
 <body>
     
     @include('layout-visitor.topbar')
+    @include('layout-visitor.bottombar')
 
     @yield('content')
 
@@ -49,6 +50,13 @@
     <!-- Select2 JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
+    {{-- <script>
+        $(document).ready(function(){
+            $(".dropdown-nav").click(function(){
+                $(".dropdown-toggle").toggleClass("show-dropdown");
+            });
+        });
+    </script> --}}
     @yield('js')
 
 </body>

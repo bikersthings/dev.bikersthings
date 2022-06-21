@@ -181,7 +181,7 @@
                                         <div class="item-seller-nama" style="">
                                             <img src="{{asset('assets/img/logo/tab-icon.png')}}" alt="" style="">
                                             <b style="">RC b19 Store</b>
-                                            <i class="fas fa-certificate" style="color: var(--primary)"></i>
+                                            <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
                                         </div>
                                     </a>
                                 </div>
@@ -231,9 +231,18 @@
         <div class="container">
             <div class="owl-carousel carousel-suggest">
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb5.png')}}">
+                                <div class="card-status">
+                                    WTB
+                                </div>
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -243,9 +252,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb4.png')}}">
+                                <div class="card-status">
+                                    JASA
+                                </div>
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -255,9 +273,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb3.png')}}">
+                                {{-- <div class="card-status">
+                                    WTB
+                                </div> --}}
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -267,9 +294,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb2.png')}}">
+                                {{-- <div class="card-status">
+                                    WTB
+                                </div> --}}
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -279,9 +315,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb5.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb1.png')}}">
+                                <div class="card-status">
+                                    WTB
+                                </div>
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -291,9 +336,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb3.png')}}">
+                                {{-- <div class="card-status">
+                                    WTB
+                                </div> --}}
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -303,9 +357,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb5.png')}}">
+                                <div class="card-status">
+                                    WTB
+                                </div>
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -315,9 +378,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb2.png')}}">
+                                {{-- <div class="card-status">
+                                    WTB
+                                </div> --}}
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -347,9 +419,18 @@
         <div class="container">
             <div class="owl-carousel carousel-suggest">
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb2.png')}}">
+                                {{-- <div class="card-status">
+                                    WTB
+                                </div> --}}
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -359,9 +440,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb5.png')}}">
+                                <div class="card-status">
+                                    JASA
+                                </div>
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -371,9 +461,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb3.png')}}">
+                                {{-- <div class="card-status">
+                                    WTB
+                                </div> --}}
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -383,9 +482,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb5.png')}}">
+                                <div class="card-status">
+                                    WTB
+                                </div>
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -395,9 +503,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb5.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb4.png')}}">
+                                {{-- <div class="card-status">
+                                    WTB
+                                </div> --}}
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -407,9 +524,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb3.png')}}">
+                                {{-- <div class="card-status">
+                                    WTB
+                                </div> --}}
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -419,9 +545,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb2.png')}}">
+                                <div class="card-status">
+                                    WTB
+                                </div>
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
@@ -431,9 +566,18 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="">
+                    <a href="/item-detail">
                         <div class="card card-item">
-                            <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
+                            <div class="card-img">
+                                <img src="{{asset('assets/img/thumbnail/thumb1.png')}}">
+                                {{-- <div class="card-status">
+                                    WTB
+                                </div> --}}
+                                <div class="card-badges">
+                                    <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                    <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <p class="card-title">AGV Pista GPRR</p>
                                 <p class="card-price">Rp. 90.000.000</p>
