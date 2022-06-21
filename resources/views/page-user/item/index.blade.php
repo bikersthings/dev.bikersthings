@@ -27,6 +27,7 @@
                                                 #
                                             </th>
                                             <th>Produk</th>
+                                            <th>Dilihat</th>
                                             <th>Harga</th>
                                             <th>Kategori</th>
                                             <th>Brand</th>
@@ -44,6 +45,9 @@
                                                 <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="" style="width: 150px; border-radius: 10px">
                                                 <br>
                                                 <div class="badge badge-primary mt-2">Nama Item</div>
+                                            </td>
+                                            <td class="align-middle">
+                                                <i class="fas fa-eye mr-1"></i> 2.000
                                             </td>
                                             <td class="align-middle">
                                                 Rp [90.000.000]

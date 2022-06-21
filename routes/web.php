@@ -101,6 +101,10 @@ Route::group(['prefix' => '/user'], function(){
 // Route Panel Admin start
 
 Route::group(['prefix' => '/admin'], function(){
+
+    Route::get('/', function () {
+        return view('page-admin.item.index');
+    }); 
     
     Route::get('/item', function () {
         return view('page-admin.item.index');

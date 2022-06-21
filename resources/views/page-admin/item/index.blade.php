@@ -24,7 +24,6 @@
                                             <th>Produk</th>
                                             <th>Harga</th>
                                             <th>Deskripsi</th>
-                                            <th>Tipe</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
@@ -66,9 +65,6 @@
                                                 tempora aperiam iste sit porro voluptatum explicabo minima 
                                             </td>
                                             <td class="align-middle">
-                                                [Tipe]
-                                            </td>
-                                            <td class="align-middle">
                                                 <div class="badge badge-dark">Reguler</div> <br>
                                                 <div class="badge badge-warning">On Hold</div> <br>
                                                 <div class="badge badge-primary">Boosted!</div>
@@ -97,7 +93,7 @@
         
             $("#dataTable").dataTable({
                 "columnDefs": [
-                    { "sortable": false, "targets": [8] }
+                    { "sortable": false, "targets": [7] }
                 ]
             });
 
