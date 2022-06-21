@@ -57,7 +57,13 @@
     <div class="main-wrapper">
         @include('layout-stisla.topbar')
 
-        @include('layout-stisla.sidebar')
+        <div style="{{ Request::is('*user*') ? '' : 'display:none' }}">
+            @include('layout-stisla.sidebar-user')
+        </div>
+
+        <div style="{{ Request::is('*admin*') ? '' : 'display:none' }}">
+            @include('layout-stisla.sidebar-admin')
+        </div>
         
         @yield('content')
 

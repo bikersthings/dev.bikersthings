@@ -66,16 +66,16 @@ Route::group(['prefix' => '/user'], function(){
         });    
     });
 
+    Route::get('/wishlist', function () {
+        return view('page-user.wishlist.index');
+    });
+
     Route::get('/icebox', function () {
         return view('page-user.icebox.index');
     });
 
     Route::get('/keranjang', function () {
         return view('page-user.keranjang.index');
-    });
-
-    Route::get('/wishlist', function () {
-        return view('page-user.wishlist.index');
     });
 
     Route::get('/keuangan', function () {
@@ -89,3 +89,31 @@ Route::group(['prefix' => '/user'], function(){
 });
 
 // Route Panel end
+
+
+
+
+
+
+
+
+
+// Route Panel Admin start
+
+Route::group(['prefix' => '/admin'], function(){
+    
+    Route::get('/item', function () {
+        return view('page-admin.item.index');
+    });  
+
+    Route::get('/icebox', function () {
+        return view('page-admin.icebox.index');
+    });  
+
+    Route::get('/user', function () {
+        return view('page-admin.user.index');
+    });  
+
+});
+
+// Route Panel Admin end

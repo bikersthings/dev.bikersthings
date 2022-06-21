@@ -101,7 +101,7 @@
                                                 hh:mm:ss - yyyy/mm/dd
                                             </td>
                                             <td class="align-middle">
-                                                BIKERSTHINGS
+                                                BIKERSTHINGS Gift
                                             </td>
                                         </tr>
                                     </tbody>
