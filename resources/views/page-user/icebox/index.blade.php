@@ -41,12 +41,13 @@
                                     <table class="table table-striped" id="dataTable">
                                     <thead class="text-center">
                                         <tr>
-                                            <th class="text-center">
+                                            <th>
                                                 #
                                             </th>
                                             <th>Ice Box</th>
                                             <th>Ice Coupon</th>
-                                            <th>Tanggal Redeem</th>
+                                            <th>Tanggal</th>
+                                            <th>Keterangan</th>
                                         </tr>
                                     </thead>
                                     <tbody class="text-center">
@@ -64,6 +65,43 @@
                                             </td>
                                             <td class="align-middle">
                                                 hh:mm:ss - yyyy/mm/dd
+                                            </td>
+                                            <td class="align-middle">
+                                                Redeem Ice Box
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle text-center">
+                                                2
+                                            </td>
+                                            <td class="text-center">
+                                                -
+                                            </td>
+                                            <td class="align-middle">
+                                                500
+                                            </td>
+                                            <td class="align-middle">
+                                                hh:mm:ss - yyyy/mm/dd
+                                            </td>
+                                            <td class="align-middle">
+                                                Boost! Voucher Gift
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle text-center">
+                                                3
+                                            </td>
+                                            <td class="text-center">
+                                                -
+                                            </td>
+                                            <td class="align-middle">
+                                                1500
+                                            </td>
+                                            <td class="align-middle">
+                                                hh:mm:ss - yyyy/mm/dd
+                                            </td>
+                                            <td class="align-middle">
+                                                BIKERSTHINGS
                                             </td>
                                         </tr>
                                     </tbody>

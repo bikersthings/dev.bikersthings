@@ -241,3 +241,18 @@ input:focus , textarea:focus , select:focus {
 }
 
 /* SWAL end */
+
+
+
+/* Data Table Extras start */
+
+.wishlist-sosmed .wrapper:last-child a {
+  width: 100%;
+  margin: 5px 0px;
+}
+
+.wishlist-sosmed .wrapper:last-child a i {
+  font-weight: lighter;
+}
+
+/* Data Table Extras end */

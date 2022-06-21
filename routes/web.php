@@ -74,6 +74,10 @@ Route::group(['prefix' => '/user'], function(){
         return view('page-user.keranjang.index');
     });
 
+    Route::get('/wishlist', function () {
+        return view('page-user.wishlist.index');
+    });
+
     Route::get('/keuangan', function () {
         return view('page-user.keuangan.index');
     });
