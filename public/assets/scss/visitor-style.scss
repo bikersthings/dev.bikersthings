@@ -85,7 +85,7 @@ a:hover {
 
 #topbar {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     position: sticky;
     background-color: white;
@@ -503,7 +503,11 @@ a:hover {
 
 
 
-
+.owl-carousel { 
+    .item {
+        padding: 4px 0px;
+    }
+}
 
 
 // Card Item start
@@ -559,6 +563,42 @@ a:hover {
 
     .card-body {
         padding: 12px 15px;
+        overflow: visible;
+        z-index: 2;
+
+        .card-logo {
+            display: flex;
+            justify-content: center;
+            margin-top: -36px;
+            text-align: center;
+            img {
+                text-align: center;
+                background-color: white;
+                padding: 8px;
+                border-radius: 50%;
+                height: 48px;
+                width: 48px;
+                object-fit: cover;
+            }
+        }
+
+        .card-nama-toko {
+            text-align: center;
+            color: $primary;
+            font-weight: bolder;
+            font-size: larger;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                margin-left: 5px;
+                height: 18px;
+                width: 18px;
+            }
+        }
 
         .card-title {
             margin-bottom: 0px;

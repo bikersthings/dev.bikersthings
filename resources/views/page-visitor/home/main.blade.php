@@ -20,6 +20,41 @@
     </div>
 </section>
 
+<section id="seller">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="wrapper head-section" style="">
+                    <div>
+                        Verified <b>Seller</b>
+                    </div>
+                    <div>
+                        Lihat Semua <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="owl-carousel carousel-wts">
+            <div class="item">
+                <div class="card card-item">
+                    <div class="card-img">
+                        <img src="{{asset('assets/img/thumbnail/thumb2.png')}}">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-logo">
+                            <img src="{{asset('assets/img/logo/tab-icon.png')}}" alt="">
+                        </div>
+                        <p class="card-nama-toko">RC b19 Store <img src="{{asset('assets/img/badge/verif.png')}}" alt=""></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="wts-item">
     <div class="container">
         <div class="row">
@@ -634,11 +669,7 @@
                 0:{
                     items:1,
                     stagePadding: 12,
-<<<<<<< HEAD
-                    margin:6,
-=======
                     margin:5,
->>>>>>> dd28e6bf0386d5c3ba035900f8b26fff45b811a5
                 }
             }
         });

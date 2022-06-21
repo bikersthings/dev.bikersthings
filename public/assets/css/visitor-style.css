@@ -63,7 +63,7 @@ a:hover {
 
 #topbar {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
@@ -360,6 +360,10 @@ a:hover {
     text-align: center;
   }
 }
+.owl-carousel .item {
+  padding: 4px 0px;
+}
+
 #all-item .col-lg2, #all-item .col-6, #ice-box .col-lg2, #ice-box .col-6 {
   margin-bottom: 24px;
 }
@@ -402,6 +406,40 @@ a:hover {
 }
 .card-item .card-body {
   padding: 12px 15px;
+  overflow: visible;
+  z-index: 2;
+}
+.card-item .card-body .card-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: -36px;
+  text-align: center;
+}
+.card-item .card-body .card-logo img {
+  text-align: center;
+  background-color: white;
+  padding: 8px;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-item .card-body .card-nama-toko {
+  text-align: center;
+  color: #1588A7;
+  font-weight: bolder;
+  font-size: larger;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-item .card-body .card-nama-toko img {
+  margin-left: 5px;
+  height: 18px;
+  width: 18px;
 }
 .card-item .card-body .card-title {
   margin-bottom: 0px;
