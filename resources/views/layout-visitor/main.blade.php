@@ -29,7 +29,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 
     <title>BIKERSTHINGS</title>
-    <link rel="icon" type="image/x-icon" href="{{asset('assets/img/logo/tab-icon-bkt.png')}}">
+    <link rel="icon" type="image/x-icon" href="{{asset('assets/img/logo/tab-logo.png')}}">
 </head>
 <body>
     
