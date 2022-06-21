@@ -91,11 +91,19 @@ a:hover {
     background-color: white;
     top: 0;
 
-    .left img {
-        width: 75%;
-        height: 75px;
-        object-fit: contain;
-    }
+    .left {
+        display: flex;
+        align-items: center;
+        a {
+            background-color: red;
+            text-align: center;
+        }
+        img {
+            width: 75%;
+            height: 75px;
+            object-fit: contain;
+        }
+    } 
 
     .center {
         display: flex; 
