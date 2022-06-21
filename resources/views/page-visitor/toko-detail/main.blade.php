@@ -11,7 +11,7 @@
             <div class="item-seller-nama" style="display: flex; justify-content: center; align-items: center">
                 <img src="{{asset('assets/img/logo/tab-icon.png')}}" alt="" style="height: 50px">
                 <b style="font-size: 24px; margin: 0px 20px">RC b19 Store</b>
-                <i class="fas fa-certificate"></i>
+                <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
             </div>
         </div>
     </section>

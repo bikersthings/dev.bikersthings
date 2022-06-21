@@ -39,17 +39,19 @@
     <div class="container">
         <div class="owl-carousel carousel-wts">
             <div class="item">
-                <div class="card card-item">
-                    <div class="card-img">
-                        <img src="{{asset('assets/img/thumbnail/thumb2.png')}}">
-                    </div>
-                    <div class="card-body">
-                        <div class="card-logo">
-                            <img src="{{asset('assets/img/logo/tab-icon.png')}}" alt="">
+                <a href="/toko-detail">
+                    <div class="card card-item">
+                        <div class="card-img">
+                            <img src="{{asset('assets/img/thumbnail/thumb2.png')}}">
                         </div>
-                        <p class="card-nama-toko">RC b19 Store <img src="{{asset('assets/img/badge/verif.png')}}" alt=""></p>
+                        <div class="card-body">
+                            <div class="card-logo">
+                                <img src="{{asset('assets/img/logo/tab-icon.png')}}" alt="">
+                            </div>
+                            <p class="card-nama-toko">RC b19 Store <img src="{{asset('assets/img/badge/verif.png')}}" alt=""></p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
