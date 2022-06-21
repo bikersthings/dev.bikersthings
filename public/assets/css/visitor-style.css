@@ -372,11 +372,36 @@ a:hover {
 .card-item img {
   border-radius: 7px 7px 0px 0px;
 }
+.card-item .card-img {
+  position: relative;
+  overflow: hidden;
+}
+.card-item .card-img .card-status {
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  color: white;
+  font-weight: bolder;
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%);
+  padding: 5px 0px;
+  width: 150px;
+  text-align: center;
+  transform: rotateY(0deg) rotate(-45deg);
+}
+.card-item .card-img .card-badges {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  display: flex;
+}
+.card-item .card-img .card-badges img {
+  width: 24px;
+}
 .card-item .card-img img {
   width: 100%;
 }
 .card-item .card-body {
-  padding: 12px 20px;
+  padding: 12px 15px;
 }
 .card-item .card-body .card-title {
   margin-bottom: 0px;
