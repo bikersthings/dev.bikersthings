@@ -44,10 +44,10 @@
                                                 Bronze
                                             </td>
                                             <td class="align-middle">
-                                                <i class="text-success fas fa-power-off"></i> 20-10-2021
+                                                <i class="text-success fas fa-power-off"></i> yyyy/mm/dd
                                             </td>
                                             <td class="align-middle ">
-                                                <button class="btn btn-info"><i class="fas fa-search"></i></button>
+                                                <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-search"></i></button>
                                                 <button class="btn btn-danger" id="swalDelete"><i class="fas fa-trash"></i></button>
                                             </td>
                                         </tr>
@@ -61,6 +61,7 @@
             </div>
         </section>
     </div>
+    @include('page-admin.user.modal')
 @endsection
 
 @section('js')
@@ -70,7 +71,7 @@
     
         $("#dataTable").dataTable({
             "columnDefs": [
-                { "sortable": false, "targets": [0] }
+                { "sortable": false, "targets": [5] }
             ]
         });
 

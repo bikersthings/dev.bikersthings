@@ -69,7 +69,7 @@
 
         <footer class="main-footer">
             <div class="footer-left">
-            Creative Person <div class="bullet"></div> Design By <a href="/"><b>MONE</b> Web Dev Team</a>
+            Great Team <div class="bullet"></div> Design By <a href="/"><b>MONE</b> Web Dev Team</a>
             </div>
             <div class="footer-right">
             2.3.0

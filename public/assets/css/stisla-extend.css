@@ -202,6 +202,13 @@ input:focus , textarea:focus , select:focus {
 
 .card-form .card-body {
   padding: 30px 40px;
+  
+}
+@media only screen and (max-width: 600px) {
+  .card-form .card-body {
+    padding: 20px 25px;
+    
+  }
 }
 
 .card-form .form-title {

@@ -31,9 +31,19 @@
                         <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title mb-4">Data Profile</div>
-                                <div class="form-group">
-                                    <label>Nama Akun</label>
-                                    <input type="text" class="form-control">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Nama Akun</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Nama Toko</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label>Alamat Lengkap</label>
