@@ -8,7 +8,12 @@
             </div>
             <div class="col-lg-6 center" style="">
                 <a href="/item-filter">Filter</a>
-                <input class="form-control" type="text" placeholder="Agv, Kyoto, Wearpack">
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Agv, Kyoto, Wearpack">
+                    <div class="wrapper">
+                        <button class="btn btn-gradient"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-3 right" style="">
                 <div type="button" class="wrapper dropdown-nav dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">

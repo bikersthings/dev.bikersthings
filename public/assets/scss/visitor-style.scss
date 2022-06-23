@@ -21,6 +21,12 @@ a:hover {
     margin: 48px 0px;
 }
 
+@media only screen and (max-width: 600px) {
+    #banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box {
+        margin: 36px 0px;
+    }
+}
+
 .badge-gold {
     color: white;
     background: linear-gradient(90deg, #FCD24B 0%, #A7610B 12.9%, #F3B62B 60.53%, #B67C1B 100%);
@@ -116,11 +122,29 @@ a:hover {
             margin-right: 15px;
         }
 
-        input {
-            border-radius: 20px;
-            border-color: #00000080;
+        .form-group {
+            display: flex;
             width: 100%;
+            input {
+                border: 2px solid #00000040;
+                border-right: transparent;
+                border-radius: 5px 0px 0px 5px;
+            }
+            .wrapper {
+                border: 2px solid #00000040;
+                border-left: transparent;
+                border-radius: 0px 5px 5px 0px;
+                // background-color: red;
+                padding: 2px;
+                button {
+                    padding: 0px 15px;
+                    border-radius: 2px;
+                    height: 100%;
+                    border: transparent;
+                }
+            }
         }
+
     }
 
     .right {
@@ -190,6 +214,7 @@ a:hover {
 // Bottombar start
 
 #bottombar {
+    z-index: 2;
     @media only screen and (min-width: 600px) {
         display: none;
     }
@@ -563,7 +588,7 @@ a:hover {
     .card-body {
         padding: 12px 15px;
         overflow: visible;
-        z-index: 2;
+        z-index: 1;
 
         .card-logo {
             display: flex;
