@@ -7,16 +7,15 @@
             <div class="row">
                 <div class="col-lg-3 col-12">
                     <section id="filter-item">
-                        <div class="accordion" id="accordionExample">
+                        <div class="accordion accordion-flush mb-3" id="accordionFlushExample">
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button filter-head" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button filter-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
                                         Filter
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                        
                                         <div class="card">
                                             <div class="card-body">
                                                 <div class="filter-title">
@@ -94,88 +93,9 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- <div class="filter-head">
-                            Filter
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="filter-title">
-                                    Spesifikasi
-                                </div>
-                                <div class="form-group">
-                                    <label>Kategori</label>
-                                    <select id="kategori" class="js-states form-control">
-                                        <option>Kategori 1</option>
-                                        <option>Kategori 2</option>
-                                        <option>Kategori 3</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label>Brand</label>
-                                    <select id="brand" class="js-states form-control">
-                                        <option>Brand 1</option>
-                                        <option>Brand 2</option>
-                                        <option>Brand 3</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label>Tipe</label>
-                                    <select id="tipe" class="js-states form-control">
-                                        <option>Tipe 1</option>
-                                        <option>Tipe 2</option>
-                                        <option>Tipe 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="card-body">
-                                <div class="filter-title">
-                                    Harga
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text">Rp</div>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Harga Minimum">
-                                    </div>
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text">Rp</div>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Harga Maksimum">
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="card-body">
-                                <div class="filter-title">
-                                    Kondisi
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                    <label class="form-check-label" for="gridRadios1">
-                                    Baru
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                    <label class="form-check-label" for="gridRadios2">
-                                    Second
-                                    </label>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="card-body">
-                                <button class="btn btn-gradient" style="width: 100%">Filter</button>
-                            </div>
-                        </div> --}}
                     </section>
                 </div>
                 <div class="col-lg-9 col-12">
-                    <div class="filter-head">
-                        Tags : <span><div>Helm</div><div>AGV</div><div>K-3sv</div></span>
-                    </div>
                     <section id="all-item" class="m-0">
                         
                         <div class="row">

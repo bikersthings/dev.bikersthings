@@ -117,7 +117,7 @@ a:hover {
   padding: 2px;
 }
 #topbar .center .form-group .wrapper button {
-  padding: 0px 15px;
+  padding: 0px 24px;
   border-radius: 2px;
   height: 100%;
   border: transparent;
@@ -295,6 +295,22 @@ a:hover {
   margin-right: 10px;
 }
 
+input:focus {
+  border-color: #ced4da !important;
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background: linear-gradient(90deg, #044660 0.18%, #1596B2 100.18%) !important;
+  color: white;
+}
+
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
   background-color: #28a745 !important;
   border-color: #3d9970 !important;
@@ -324,12 +340,14 @@ a:hover {
   font-weight: bolder;
   margin-bottom: 12px;
 }
-#filter-item .form-group {
-  margin-bottom: 12px;
-  font-weight: lighter;
+#filter-item .accordion-button:not(.collapsed) {
+  color: #1588A7;
 }
-#filter-item .form-group label {
-  margin-bottom: 5px;
+#filter-item .accordion-body {
+  padding: 0px;
+}
+#filter-item .accordion-body .form-group {
+  margin-bottom: 10px;
 }
 
 #footer {

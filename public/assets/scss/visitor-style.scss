@@ -138,7 +138,7 @@ a:hover {
                 // background-color: red;
                 padding: 2px;
                 button {
-                    padding: 0px 15px;
+                    padding: 0px 24px;
                     border-radius: 2px;
                     height: 100%;
                     border: transparent;
@@ -399,8 +399,21 @@ a:hover {
 
 
 
+input:focus {
+    border-color: #ced4da!important;
+    box-shadow: none!important;
+    outline: 0 none!important;
+}
 
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
 
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background: $gradient!important;
+    color: white;
+}
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
     background-color: #28a745!important;
@@ -435,11 +448,16 @@ a:hover {
         font-weight: bolder;
         margin-bottom: 12px;
     }
-    .form-group {
-        margin-bottom: 12px;
-        font-weight: lighter;
-        label {
-            margin-bottom: 5px;
+
+    .accordion-button:not(.collapsed) {
+        color: $primary;
+    }
+
+    .accordion-body {
+        padding: 0px;
+
+        .form-group {
+            margin-bottom: 10px;
         }
     }
 }
