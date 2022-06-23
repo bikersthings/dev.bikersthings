@@ -5,16 +5,24 @@
     <div class="" >
         <div class="owl-carousel carousel-banner">
             <div class="item">
-                <img src="{{asset('assets/img/banner/ban1.png')}}" alt="">
+                <a href="">
+                    <img src="{{asset('assets/img/banner/ban1.png')}}" alt="">
+                </a>
             </div>
             <div class="item">
-                <img src="{{asset('assets/img/banner/ban2.png')}}" alt="">
+                <a href="">
+                    <img src="{{asset('assets/img/banner/ban2.png')}}" alt="">
+                </a>
             </div>
             <div class="item">
-                <img src="{{asset('assets/img/banner/ban3.png')}}" alt="">
+                <a href="">
+                    <img src="{{asset('assets/img/banner/ban3.png')}}" alt="">
+                </a>
             </div>
             <div class="item">
-                <img src="{{asset('assets/img/banner/ban4.png')}}" alt="">
+                <a href="">
+                    <img src="{{asset('assets/img/banner/ban4.png')}}" alt="">
+                </a>
             </div>
         </div>
     </div>

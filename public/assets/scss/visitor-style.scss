@@ -17,12 +17,12 @@ a:hover {
     color: black;
 }
 
-#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box {
+#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box, #seller {
     margin: 48px 0px;
 }
 
 @media only screen and (max-width: 600px) {
-    #banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box {
+    #banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box, #seller {
         margin: 36px 0px;
     }
 }
@@ -415,11 +415,6 @@ input:focus {
     color: white;
 }
 
-.select2-container--default .select2-selection--multiple .select2-selection__choice {
-    background-color: #28a745!important;
-    border-color: #3d9970!important;
-}
-
 // Filter Item start
 
 .filter-head {
@@ -444,10 +439,6 @@ input:focus {
 }
 
 #filter-item {
-    .filter-title {
-        font-weight: bolder;
-        margin-bottom: 12px;
-    }
 
     .accordion-button:not(.collapsed) {
         color: $primary;
@@ -457,7 +448,7 @@ input:focus {
         padding: 0px;
 
         .form-group {
-            margin-bottom: 10px;
+            margin: 10px 0px;
         }
     }
 }

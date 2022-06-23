@@ -46,7 +46,6 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <hr>
                                             <div class="card-body">
                                                 <div class="filter-title">
                                                     Harga
@@ -66,7 +65,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <hr>
                                             <div class="card-body">
                                                 <div class="filter-title">
                                                     Kondisi
@@ -84,7 +82,6 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <hr>
                                             <div class="card-body">
                                                 <button class="btn btn-gradient" style="width: 100%">Filter</button>
                                             </div>

@@ -619,8 +619,11 @@
             autoplayTimeout:2500,
             autoplayHoverPause:true,
             responsive:{
-                600:{
+                990:{
                     items:6
+                },
+                300:{
+                    items:3
                 },
                 0:{
                     items:2
