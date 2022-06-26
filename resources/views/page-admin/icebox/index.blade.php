@@ -26,8 +26,8 @@
                                                 <th>Ice Box</th>
                                                 <th>Deskripsi</th>
                                                 <th>@ Ice Coupon</th>
-                                                <th>Limit</th>
                                                 <th>Expired</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody class="text-center">
@@ -38,7 +38,9 @@
                                                 <td class="text-center">
                                                     <img src="{{asset('assets/img/thumbnail/item.png')}}" alt="" style="width: 100px; border-radius: 10px">
                                                     <br>
-                                                    <div class="badge badge-primary mt-2">[Nama Ice Box]</div>
+                                                    <a href="">
+                                                        <div class="badge badge-primary mt-2">[Nama Ice Box]</div>
+                                                    </a>
                                                 </td>
                                                 <td class="align-middle text-center">
                                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, reiciendis?
@@ -47,10 +49,16 @@
                                                     250
                                                 </td>
                                                 <td class="align-middle">
-                                                    1000 Participant
+                                                    50 / 100 Participant <br>
+                                                    <div class="progress my-3">
+                                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                                                    </div>
+                                                    <div class="badge badge-success">Ative : [yyyy:mm:dd]</div>
+                                                    
                                                 </td>
-                                                <td class="align-middle">
-                                                    yyyy:mm:dd
+                                                <td class="align-middle ">
+                                                    <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-search"></i></button>
+                                                    <button class="btn btn-danger" id="swalDelete"><i class="fas fa-trash"></i></button>
                                                 </td>
                                             </tr>
                                         </tbody>

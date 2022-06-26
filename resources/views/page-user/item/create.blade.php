@@ -13,7 +13,7 @@
                         <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title">Saya Ingin</div>
-                                <div class="form-sub-title">WTS untuk item dijual, dan WTB untuk item dibeli/dicari.</div>
+                                <div class="form-sub-title">WTS untuk item dijual, dan WTB untuk item dibeli/dicari</div>
                                 <div class="radio-form">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gridRadios" id="wts" value="option1" checked="">
@@ -27,10 +27,32 @@
                                             WTB (Membeli/Mencari Barang)
                                         </label>
                                     </div>
-                                    <div class="form-check">
+                                    {{-- <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gridRadios" id="jasa" value="option3">
                                         <label class="form-check-label" for="jasa">
                                             Jasa (Menjual Jasa)
+                                        </label>
+                                    </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card card-form card-primary">
+                            <div class="card-body">
+                                <div class="form-title">Kondisi Item</div>
+                                <div class="form-sub-title">Sesuaikan dengan kondisi item</div>
+                                <div class="radio-form">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="wts" value="option1" checked="">
+                                        <label class="form-check-label" for="wts">
+                                            Baru
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="wtb" value="option2">
+                                        <label class="form-check-label" for="wtb">
+                                            Second
                                         </label>
                                     </div>
                                 </div>
@@ -41,7 +63,7 @@
                         <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title">Nama Item</div>
-                                <div class="form-sub-title">Nama Item harus terdiri dari Brand dan Tipe.</div>
+                                <div class="form-sub-title">Nama Item harus terdiri dari Brand dan Tipe</div>
                                 <div class="form-group mb-0">
                                     <input type="text" class="form-control" placeholder="AGV (Brand) + Pista GP Misano 2015 (Tipe)   /   KYT (Brand) + Kyoto (Tipe)   /   SENA (Brand) + 50r (Tipe)">
                                 </div>
@@ -52,7 +74,7 @@
                         <div class="card card-form card-primary">
                             <div class="card-body">
                                 <div class="form-title">Harga Item</div>
-                                <div class="form-sub-title">Harga Jual atau Budget Pembelian</div>
+                                <div class="form-sub-title">Harga Jual atau Budget pembelian</div>
                                 <div class="form-group mb-0">
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
@@ -152,23 +174,6 @@
 @endsection
 
 @section('js')
-<script>
-    if(jQuery().summernote) {
-        $(".summernote").summernote({
-            dialogsInBody: true,
-            minHeight: 250,
-        });
-        $(".summernote-simple").summernote({
-            dialogsInBody: true,
-            minHeight: 150,
-            toolbar: [
-                ['style', ['bold', 'italic', 'underline', 'clear']],
-                ['font', ['strikethrough']],
-                ['para', ['paragraph']]
-            ]
-        });
-    }
-</script>
 <script>
     $("#swalSubmit").click(function() {
         swal({
