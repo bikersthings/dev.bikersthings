@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Visitor\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -121,3 +122,6 @@ Route::group(['prefix' => '/admin'], function(){
 });
 
 // Route Panel Admin end
+
+
+Route::get('/tebe', [HomeController::class,'index']);

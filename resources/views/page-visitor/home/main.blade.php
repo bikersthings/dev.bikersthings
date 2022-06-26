@@ -460,11 +460,12 @@
     </div>
     <div class="container">
         <div class="row">
+            @foreach ($alldata as $item)
             <div class="col-lg-2 col-6">
                 <a href="/item-detail">
                     <div class="card card-item">
                         <div class="card-img">
-                            <img src="{{asset('assets/img/thumbnail/thumb5.png')}}">
+                            <img src="https://panel.bikersthings.com/storage/images/item/{{ $item->thumbnail_item }}">
                             <div class="card-status">
                                 WTB
                             </div>
@@ -474,160 +475,14 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <p class="card-title">AGV Pista GPRR</p>
-                            <p class="card-price">Rp. 90.000.000</p>
+                            <p class="card-title">{{$item->item_name}}</p>
+                            <p class="card-price">{{$item->harga}}</p>
                             <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-lg-2 col-6">
-                <a href="/item-detail">
-                    <div class="card card-item">
-                        <div class="card-img">
-                            <img src="{{asset('assets/img/thumbnail/thumb4.png')}}">
-                            <div class="card-status">
-                                JASA
-                            </div>
-                            <div class="card-badges">
-                                <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
-                                <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title">AGV Pista GPRR</p>
-                            <p class="card-price">Rp. 90.000.000</p>
-                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-6">
-                <a href="/item-detail">
-                    <div class="card card-item">
-                        <div class="card-img">
-                            <img src="{{asset('assets/img/thumbnail/thumb3.png')}}">
-                            {{-- <div class="card-status">
-                                WTB
-                            </div> --}}
-                            <div class="card-badges">
-                                {{-- <img src="{{asset('assets/img/badge/verif.png')}}" alt=""> --}}
-                                <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title">AGV Pista GPRR</p>
-                            <p class="card-price">Rp. 90.000.000</p>
-                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-6">
-                <a href="/item-detail">
-                    <div class="card card-item">
-                        <div class="card-img">
-                            <img src="{{asset('assets/img/thumbnail/thumb2.png')}}">
-                            {{-- <div class="card-status">
-                                WTB
-                            </div> --}}
-                            <div class="card-badges">
-                                <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
-                                {{-- <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt=""> --}}
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title">AGV Pista GPRR</p>
-                            <p class="card-price">Rp. 90.000.000</p>
-                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-6">
-                <a href="/item-detail">
-                    <div class="card card-item">
-                        <div class="card-img">
-                            <img src="{{asset('assets/img/thumbnail/thumb1.png')}}">
-                            <div class="card-status">
-                                WTB
-                            </div>
-                            <div class="card-badges">
-                                <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
-                                {{-- <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt=""> --}}
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title">AGV Pista GPRR</p>
-                            <p class="card-price">Rp. 90.000.000</p>
-                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-6">
-                <a href="/item-detail">
-                    <div class="card card-item">
-                        <div class="card-img">
-                            <img src="{{asset('assets/img/thumbnail/thumb3.png')}}">
-                            <div class="card-status">
-                                WTB
-                            </div>
-                            <div class="card-badges">
-                                <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
-                                {{-- <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt=""> --}}
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title">AGV Pista GPRR</p>
-                            <p class="card-price">Rp. 90.000.000</p>
-                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-6">
-                <a href="/item-detail">
-                    <div class="card card-item">
-                        <div class="card-img">
-                            <img src="{{asset('assets/img/thumbnail/thumb1.png')}}">
-                            <div class="card-status">
-                                JASA
-                            </div>
-                            <div class="card-badges">
-                                <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
-                                {{-- <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt=""> --}}
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title">AGV Pista GPRR</p>
-                            <p class="card-price">Rp. 90.000.000</p>
-                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-6">
-                <a href="/item-detail">
-                    <div class="card card-item">
-                        <div class="card-img">
-                            <img src="{{asset('assets/img/thumbnail/thumb4.png')}}">
-                            {{-- <div class="card-status">
-                                WTB
-                            </div> --}}
-                            <div class="card-badges">
-                                {{-- <img src="{{asset('assets/img/badge/verif.png')}}" alt=""> --}}
-                                {{-- <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt=""> --}}
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title">AGV Pista GPRR</p>
-                            <p class="card-price">Rp. 90.000.000</p>
-                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+            @endforeach
         </div>
         <div class="row">
             <div class="col-12 text-center">
