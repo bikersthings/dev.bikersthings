@@ -32,7 +32,11 @@ class HomeController extends Controller
 
         $alldata = $tebe->data;
 
+
         return view('page-visitor.home.main',get_defined_vars());
+
+        
+        info('This is some useful information.');
 
     }
 }
