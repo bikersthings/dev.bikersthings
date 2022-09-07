@@ -405,9 +405,6 @@ input:focus {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
 }
-.card-item img {
-  border-radius: 7px 7px 0px 0px;
-}
 .card-item .card-img {
   position: relative;
   overflow: hidden;
@@ -435,6 +432,7 @@ input:focus {
 }
 .card-item .card-img img {
   width: 100%;
+  border-radius: 6px 6px 0px 0px;
 }
 .card-item .card-body {
   padding: 12px 15px;
@@ -476,10 +474,10 @@ input:focus {
 .card-item .card-body .card-title {
   margin-bottom: 0px;
   font-weight: bolder;
+  font-size: larger;
 }
 .card-item .card-body .card-price {
   margin: 5px 0px;
-  text-align: right;
   color: red;
   font-weight: bolder;
 }

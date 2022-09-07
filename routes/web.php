@@ -18,9 +18,9 @@ use App\Http\Controllers\Visitor\HomeController;
 // Route Visitor start
 
 Route::group(['prefix' => '/'], function(){
-    Route::get('/', function () {
-        return view('page-visitor.home.main');
-    });
+    // Route::get('/', function () {
+    //     return view('page-visitor.home.main');
+    // });
 
     Route::get('/item-filter', function () {
         return view('page-visitor.item-filter.main');
@@ -124,4 +124,4 @@ Route::group(['prefix' => '/admin'], function(){
 // Route Panel Admin end
 
 
-Route::get('/tebe', [HomeController::class,'index']);
+Route::get('/', [HomeController::class,'index']);
