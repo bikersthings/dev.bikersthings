@@ -17,12 +17,12 @@ a:hover {
     color: black;
 }
 
-#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box, #seller {
+#banner, #brands, #wts-wtb, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box, #seller {
     margin: 48px 0px;
 }
 
 @media only screen and (max-width: 600px) {
-    #banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box, #seller {
+    #banner, #brands, #wts-wtb, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box, #seller {
         margin: 36px 0px;
     }
 }
@@ -685,15 +685,10 @@ input:focus {
         }
 
         .progress-ib {
-            height: 10px;
+            height: 20px;
             .bg-info {
                 background-color: $primary!important;
             }
-        }
-
-        .progress-num {
-            font-size: smaller;
-            letter-spacing: 2px;
         }
 
         button {
@@ -705,7 +700,7 @@ input:focus {
         .exp-ib {
             text-align: right;
             margin-top: 10px;
-            font-size: smaller;
+            font-size: 11px;
             color: #6C757D;
         }
 

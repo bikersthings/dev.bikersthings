@@ -11,12 +11,12 @@ a:hover {
   color: black;
 }
 
-#banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box, #seller {
+#banner, #brands, #wts-wtb, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box, #seller {
   margin: 48px 0px;
 }
 
 @media only screen and (max-width: 600px) {
-  #banner, #wts-item, #wtb-item, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box, #seller {
+  #banner, #brands, #wts-wtb, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box, #seller {
     margin: 36px 0px;
   }
 }
@@ -510,14 +510,10 @@ input:focus {
   font-size: larger;
 }
 .card-item-ib .card-footer .progress-ib {
-  height: 10px;
+  height: 20px;
 }
 .card-item-ib .card-footer .progress-ib .bg-info {
   background-color: #1588A7 !important;
-}
-.card-item-ib .card-footer .progress-num {
-  font-size: smaller;
-  letter-spacing: 2px;
 }
 .card-item-ib .card-footer button {
   width: 100%;
@@ -527,7 +523,7 @@ input:focus {
 .card-item-ib .card-footer .exp-ib {
   text-align: right;
   margin-top: 10px;
-  font-size: smaller;
+  font-size: 11px;
   color: #6C757D;
 }
 .card-item-ib .card-footer .harga-ib {
