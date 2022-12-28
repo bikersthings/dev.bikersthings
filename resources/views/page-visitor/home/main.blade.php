@@ -59,6 +59,57 @@
     </div>
 </section>
 
+<section id="new-comer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="wrapper head-section" style="">
+                            <div>
+                                <b>WTS</b> (Want To Sell)
+                            </div>
+                            <div>
+                                Lihat Semua <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel carousel-wts">
+                    <div class="item">
+                        <x-item.opt2/>
+                    </div>
+                    <div class="item">
+                        <x-item.opt2/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="wrapper head-section" style="">
+                            <div>
+                                <b>WTB</b> (Want To Buy)
+                            </div>
+                            <div>
+                                Lihat Semua <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel carousel-wts">
+                    <div class="item">
+                        <x-item.opt1/>
+                    </div>
+                    <div class="item">
+                        <x-item.opt1/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="brands">
     <div class="container">
         <div class="owl-carousel carousel-brands">
@@ -80,6 +131,31 @@
             <div class="item">
                 <a href="">
                     <img src="{{asset('assets/img/logo-brand/KYT.png')}}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="kategori">
+    <div class="container">
+        <div class="owl-carousel carousel-kategori">
+            <div class="item">
+                <a href="">
+                    <div class="card" style="text-align: center; font-weight: bold">
+                        <div class="card-body" style="">
+                            <img class="mr-2" src="{{asset('assets/img/siluet/intercom.png')}}" alt=""> Intercom
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <div class="card" style="text-align: center; font-weight: bold">
+                        <div class="card-body" style="">
+                            <img class="mr-2" src="{{asset('assets/img/siluet/helm.png')}}" alt=""> Helm
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
@@ -241,7 +317,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-title">{{$item->item_name}}</p>
-                            <p class="card-price">{{$item->harga}}</p>
+                            <p class="card-price">Rp {{$item->harga}}</p>
                             <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
                         </div>
                     </div>
@@ -293,6 +369,22 @@
                 }
             }
         });
+        $('.carousel-kategori').owlCarousel({
+            loop:true,
+            dots:false,
+            margin:24,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
+            responsive:{
+                600:{
+                    items:8
+                },
+                0:{
+                    items:2
+                }
+            }
+        });
         $('.carousel-wts').owlCarousel({
             loop:true,
             dots:false,
@@ -302,7 +394,7 @@
             autoplayHoverPause:true,
             responsive:{
                 600:{
-                    items:4
+                    items:3
                 },
                 0:{
                     items:2
@@ -327,6 +419,7 @@
                 }
             }
         });
+        
 
     })
 </script>
