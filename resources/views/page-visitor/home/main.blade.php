@@ -62,7 +62,7 @@
 <section id="new-comer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" id="new-comer-wts">
                 <div class="row">
                     <div class="col-12">
                         <div class="wrapper head-section" style="">
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="owl-carousel carousel-wts">
+                <div class="owl-carousel carousel-new-comer">
                     <div class="item">
                         <x-item.opt2/>
                     </div>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" id="new-comer-wtb">
                 <div class="row">
                     <div class="col-12">
                         <div class="wrapper head-section" style="">
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="owl-carousel carousel-wts">
+                <div class="owl-carousel carousel-new-comer">
                     <div class="item">
                         <x-item.opt1/>
                     </div>
@@ -199,91 +199,6 @@
     </div>
 </section> --}}
 
-{{-- <section id="wts-wtb">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6" >
-                <section id="wts-item">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="wrapper head-section" style="">
-                                <div>
-                                    <b>WTS</b> (Want To Sell)
-                                </div>
-                                <div>
-                                    Lihat Semua <i class="fas fa-chevron-right"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-carousel carousel-wts">
-                        <div class="item">
-                            <a href="/item-detail">
-                                <div class="card card-item">
-                                    <div class="card-img">
-                                        <img src="{{asset('assets/img/thumbnail/thumb2.png')}}">
-                                        <div class="card-status">
-                                            WTB
-                                        </div>
-                                        <div class="card-badges">
-                                            <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
-                                            <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title">AGV Pista GPRR</p>
-                                        <p class="card-price">Rp. 90.000.000</p>
-                                        <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="col-lg-6">
-                <section id="wtb-item">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="wrapper head-section" style="">
-                                <div>
-                                    <b>WTB</b> (Want To Buy)
-                                </div>
-                                <div>
-                                    Lihat Semua <i class="fas fa-chevron-right"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-carousel carousel-wts">
-                        <div class="item">
-                            <a href="/item-detail">
-                                <div class="card card-item">
-                                    <div class="card-img">
-                                        <img src="{{asset('assets/img/thumbnail/thumb5.png')}}">
-                                        <div class="card-status">
-                                            WTB
-                                        </div>
-                                        <div class="card-badges">
-                                            <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
-                                            <img src="{{asset('assets/img/badge/boost-gold.png')}}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-title">AGV Pista GPRR</p>
-                                        <p class="card-price">Rp. 90.000.000</p>
-                                        <p class="card-location"><i class="fas fa-map-marker-alt"></i> Gandaria City</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-</section> --}}
-
 <section id="all-item">
     <div class="container">
         <div class="row">
@@ -337,70 +252,7 @@
 @section('js')
 <script>
     $(document).ready(function(){
-        $('.carousel-ice-box, .carousel-seller').owlCarousel({
-            loop:true,
-            dots:false,
-            margin:20,
-            autoplay:true,
-            autoplayTimeout:2500,
-            autoplayHoverPause:true,
-            responsive:{
-                600:{
-                    items:5
-                },
-                0:{
-                    items:2
-                }
-            }
-        });
-        $('.carousel-brands').owlCarousel({
-            loop:true,
-            dots:false,
-            margin:50,
-            autoplay:true,
-            autoplayTimeout:2500,
-            autoplayHoverPause:true,
-            responsive:{
-                600:{
-                    items:9
-                },
-                0:{
-                    items:2
-                }
-            }
-        });
-        $('.carousel-kategori').owlCarousel({
-            loop:true,
-            dots:false,
-            margin:24,
-            autoplay:true,
-            autoplayTimeout:2500,
-            autoplayHoverPause:true,
-            responsive:{
-                600:{
-                    items:8
-                },
-                0:{
-                    items:2
-                }
-            }
-        });
-        $('.carousel-wts').owlCarousel({
-            loop:true,
-            dots:false,
-            margin:20,
-            autoplay:true,
-            autoplayTimeout:2500,
-            autoplayHoverPause:true,
-            responsive:{
-                600:{
-                    items:3
-                },
-                0:{
-                    items:2
-                }
-            }
-        });
+
         $('.carousel-banner').owlCarousel({
             autoplay:true,
             center: true,
@@ -418,8 +270,76 @@
                     margin:5,
                 }
             }
+        });        
+        
+        $('.carousel-ice-box').owlCarousel({
+            loop:true,
+            dots:false,
+            margin:20,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
+            
+            responsive:{
+                600:{
+                    items:5
+                },
+                0:{
+                    items:2
+                }
+            }
         });
         
+        $('.carousel-new-comer').owlCarousel({
+            loop:true,
+            dots:false,
+            margin:20,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
+            responsive:{
+                600:{
+                    items:3
+                },
+                0:{
+                    items:2
+                }
+            }
+        });
+
+        $('.carousel-brands').owlCarousel({
+            loop:true,
+            dots:false,
+            margin:50,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
+            responsive:{
+                600:{
+                    items:9
+                },
+                0:{
+                    items:2
+                }
+            }
+        });
+        
+        $('.carousel-kategori').owlCarousel({
+            loop:true,
+            dots:false,
+            margin:24,
+            autoplay:true,
+            autoplayTimeout:2500,
+            autoplayHoverPause:true,
+            responsive:{
+                600:{
+                    items:9
+                },
+                0:{
+                    items:2
+                }
+            }
+        });
 
     })
 </script>

@@ -11,13 +11,16 @@ a:hover {
   color: black;
 }
 
-#banner, #brands, #wts-wtb, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box, #seller {
+#banner, #ice-box, #new-comer, #brands, #kategori, #all-item, #filter-page, #toko-banner, #detail-item, #suggest-toko, #suggest-serupa, #toko-info, #toko-sosmed, #all-item {
   margin: 48px 0px;
 }
 
 @media only screen and (max-width: 600px) {
-  #banner, #brands, #wts-wtb, #all-item, #separator, #detail-item, #suggest-toko, #suggest-serupa, #toko-banner, #filter-page, #ice-box, #seller {
+  #banner, #ice-box, #new-comer, #brands, #kategori, #all-item, #filter-page, #toko-banner, #detail-item, #suggest-toko, #suggest-serupa, #toko-info, #toko-sosmed, #all-item {
     margin: 36px 0px;
+  }
+  #new-comer #new-comer-wts {
+    margin-bottom: 36px;
   }
 }
 .badge-gold {
@@ -392,10 +395,6 @@ input:focus {
     text-align: center;
   }
 }
-.owl-carousel .item {
-  padding: 4px 0px;
-}
-
 #all-item .col-lg2, #all-item .col-6, #ice-box .col-lg2, #ice-box .col-6 {
   margin-bottom: 24px;
 }

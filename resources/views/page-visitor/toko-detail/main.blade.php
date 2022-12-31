@@ -16,18 +16,20 @@
         </div>
     </section>
     <section id="toko-sosmed">
-        <div class="row justify-content-center">
-            <div class="col-lg-2 col-6">
-                <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-wa.png')}}" alt=""> Whats App</button>
-            </div>
-            <div class="col-lg-2 col-6">
-                <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-line.png')}}" alt=""> Line</button>
-            </div>
-            <div class="col-lg-2 col-6">
-                <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-ig.png')}}" alt=""> Instagram</button>
-            </div>
-            <div class="col-lg-2 col-6">
-                <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-tele.png')}}" alt=""> Telegram</button>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-6">
+                    <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-wa.png')}}" alt=""> Whats App</button>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-line.png')}}" alt=""> Line</button>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-ig.png')}}" alt=""> Instagram</button>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-tele.png')}}" alt=""> Telegram</button>
+                </div>
             </div>
         </div>
     </section>
