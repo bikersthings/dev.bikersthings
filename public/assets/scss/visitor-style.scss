@@ -447,8 +447,15 @@ input:focus {
 
 #filter-item {
 
-    .accordion-button:not(.collapsed) {
-        color: $primary;
+    .accordion-button {
+        background: $gradient;
+        color: white;
+        padding: 10px 20px; 
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .accordion-button:after {
+        background-image: url('../img/material/arrow.png')!important;
     }
 
     .accordion-body {
@@ -457,6 +464,18 @@ input:focus {
         .form-group {
             margin: 10px 0px;
         }
+    }
+
+    .form-group {
+        label {
+            margin-bottom: 4px;
+        }
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        // background-color: red;
+        line-height: normal;
+        // padding: 10px;
     }
 }
 

@@ -22,8 +22,9 @@
                                                     Spesifikasi
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>Kategori</label>
+                                                    <label>Kategori</label> <br>
                                                     <select id="kategori" class="js-states form-control">
+                                                        <option>Semua Kategori</option>
                                                         <option>Kategori 1</option>
                                                         <option>Kategori 2</option>
                                                         <option>Kategori 3</option>
@@ -32,17 +33,10 @@
                                                 <div class="form-group">
                                                     <label>Brand</label>
                                                     <select id="brand" class="js-states form-control">
+                                                        <option>Semua Brand</option>
                                                         <option>Brand 1</option>
                                                         <option>Brand 2</option>
                                                         <option>Brand 3</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Tipe</label>
-                                                    <select id="tipe" class="js-states form-control">
-                                                        <option>Tipe 1</option>
-                                                        <option>Tipe 2</option>
-                                                        <option>Tipe 3</option>
                                                     </select>
                                                 </div>
                                             </div>
