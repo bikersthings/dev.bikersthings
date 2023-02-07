@@ -291,9 +291,10 @@
         });
         
         $('.carousel-new-comer').owlCarousel({
+            // stagePadding: 10,
             loop:true,
             dots:false,
-            margin:20,
+            margin:18,
             autoplay:true,
             autoplayTimeout:2500,
             autoplayHoverPause:true,

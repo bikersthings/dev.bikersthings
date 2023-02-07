@@ -572,8 +572,13 @@ input:focus {
     }
 }
 
+.card-item:hover {
+    transform: scale(1.05);
+}
+
 .card-item {
 
+    transition: transform 0.5s;
     font-size: smaller;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
@@ -738,3 +743,18 @@ input:focus {
 }
   
 // Card Item IB end
+
+
+
+
+// Carousel start
+
+
+#new-comer {
+    .owl-stage-outer {
+        padding: 10px 5px 10px 5px;
+    }
+}
+
+
+// Carousel end
