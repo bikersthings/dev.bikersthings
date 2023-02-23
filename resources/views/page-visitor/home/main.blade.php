@@ -38,6 +38,11 @@
                             <div>
                                 <b>Ice Box</b>
                             </div>
+                            <div>
+                                <a href="">
+                                    Lihat Lainnya <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12">
@@ -70,7 +75,9 @@
                                 <b>WTS</b> (Want To Sell)
                             </div>
                             <div>
-                                Lihat Semua <i class="fas fa-chevron-right"></i>
+                                <a href="">
+                                    Lihat Lainnya <i class="fas fa-chevron-right"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -92,7 +99,9 @@
                                 <b>WTB</b> (Want To Buy)
                             </div>
                             <div>
-                                Lihat Semua <i class="fas fa-chevron-right"></i>
+                                <a href="">
+                                    Lihat Lainnya <i class="fas fa-chevron-right"></i>
+                                </a>
                             </div>
                         </div>
                     </div>

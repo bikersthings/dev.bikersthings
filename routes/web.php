@@ -35,6 +35,10 @@ Route::group(['prefix' => '/'], function(){
     Route::get('/ice-box', function () {
         return view('page-visitor.ice-box.main');
     }); 
+
+    Route::get('/register', function () {
+        return view('auth.register');
+    }); 
 });
 
 // Route Visitor end
