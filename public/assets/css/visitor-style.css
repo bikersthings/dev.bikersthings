@@ -579,22 +579,11 @@ input:focus {
 }
 #register .right {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-#register .right .card-login {
-  width: 50%;
-}
-@media only screen and (max-width: 600px) {
-  #register .right .card-login {
-    width: 80%;
-  }
-}
-#register .right .card-login .logo img {
+#register .right img {
   width: 100%;
 }
-#register .right .card-login form .extra {
+#register .right form .extra {
   display: flex;
   justify-content: space-between;
 }/*# sourceMappingURL=visitor-style.css.map */
