@@ -23,7 +23,7 @@
     </div>
     <button class="btn btn-gradient w-100 mb-5" type="submit">Daftar</button>
     <div class="register text-center">
-        Sudah punya akun? <a href=""><b><i>Masuk</i></b></a>
+        Belum punya akun? <a href="/register"><b><i>Buat Akun</i></b></a>
     </div>
 </form>
 @endsection
