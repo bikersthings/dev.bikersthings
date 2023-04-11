@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - bikersthings_v1
-name: 🚀 Deploy dev website on push 
+name: 🚀 Deploy dev website on push
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -17,4 +17,4 @@ jobs:
           server: ftp.bikersthings.com
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
-          server-dir: '/BIKERSTHINGS-FE/dev.bikersthings/'
+          server-dir: "/BIKERSTHINGS-FE/dev.bikersthings/"
