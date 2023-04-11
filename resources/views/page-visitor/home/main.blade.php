@@ -6,6 +6,11 @@
         <div class="owl-carousel carousel-banner">
             <div class="item">
                 <a href="">
+                    mantapppp
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
                     <img src="{{asset('assets/img/banner/ban1.png')}}" alt="">
                 </a>
             </div>
