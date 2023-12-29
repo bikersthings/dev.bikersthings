@@ -4,39 +4,70 @@ namespace App\Http\Controllers\Visitor;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+// use Illuminate\Support\Collection;
 
 class HomeController extends Controller
 {
     function index() {
-        $curl = curl_init();
 
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://panel.bikersthings.com/APIALLDATA',
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => '',
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 0,
-            CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => 'GET',
-            CURLOPT_HTTPHEADER => array(
-                'Cookie: XSRF-TOKEN=eyJpdiI6IkRNcm1OaXE3ZnRLcUkwV3Z1RDB5NGc9PSIsInZhbHVlIjoidEd5RkN1M0d5MHM3Q1hSWlFScTVlbDhOdmlGbGplN3RjeWt3UXVOa2NyNVVYdEFWVVZvbWVPem9EcFpQdkxreGNMT3F5SDdDeWJFR1BRbldTRUJMbEhRQVh2YWtRVFFhZkFQSDJkRSs3ZjE3QUlqdGhtY3hGelo5NVdxTjEvUk0iLCJtYWMiOiIzNzE3NzJhYzM1YzRjZTVmZjdmYzZkMWUyOWMwMTAzYmYwZDg4MzNlM2FiZTNiYTQ0NjNjYzg2YWU0NDE5ZGYxIiwidGFnIjoiIn0%3D; bikersthings_session=eyJpdiI6IkdwWlFnTFRKTEhlWnErbjZvSjUxd3c9PSIsInZhbHVlIjoiaUtpbEpLVzE4cEtFTmFDTFZQZjB4YTNBZFdoOUVHWGJ5YnZreFB0UlZ6MFBXNEg4TVpvZDJRTWpLbCtBcTZIUTg4OWxlSmZYdFdnaTEvQ0k5YkJ1MmI2eVVoV0w1akREOVZjeno2bjN0YmdEcE5weDd5d2JTZFZDWVJrcDU3VUUiLCJtYWMiOiI1N2YzNDE3ZGRmYWNiMjM4N2RkZWYwNDAxNzE3ZGEyNjc2MGM1NDg4Mzc5MmFkZDliYWQ0NGI1YWU1MWJjNTdjIiwidGFnIjoiIn0%3D'
-            ),
-        ));
+        $responseBrands = Http::withHeaders([
+            'Authorization' => 'Bearer pathCnVHzPHzkdZT0.1bc756d02ec7ed26a492f2fc5945d9711ef0825ddba9912cd6a62df6e0740351'
+        ])->get('https://api.airtable.com/v0/appbk25M6lGwgaVjW/item_brand');
+        $brands = $responseBrands['records'];
 
-        $response = curl_exec($curl);
+        $responseCategories = Http::withHeaders([
+            'Authorization' => 'Bearer pathCnVHzPHzkdZT0.1bc756d02ec7ed26a492f2fc5945d9711ef0825ddba9912cd6a62df6e0740351'
+        ])->get('https://api.airtable.com/v0/appbk25M6lGwgaVjW/item_category');
+        $categories = $responseCategories['records'];
 
-        curl_close($curl);
-
-        $tebe = json_decode($response);
-
-        $alldata = $tebe->data;
+        // $responseItems = Http::withHeaders([
+        //     'Authorization' => 'Bearer pathCnVHzPHzkdZT0.1bc756d02ec7ed26a492f2fc5945d9711ef0825ddba9912cd6a62df6e0740351'
+        // ])->get('https://api.airtable.com/v0/appbk25M6lGwgaVjW/items');
+        // $items = $responseItems['records'];
 
 
-        return view('page-visitor.home.main',get_defined_vars());
 
+        // Fetch IceBox
+        $responseIceBox = Http::get('https://tubaguskresnabayu.site/assets/dummy_response/iceboxes.json');
+        $iceboxes = json_decode($responseIceBox, true);
+        foreach ($iceboxes['data'] as &$item){
+            $join = $item['ib_participants']['ib_participant_join'];
+            $total = $item['ib_participants']['ib_participant_limit'];
+            $left = $total - $join;
+            $percent = ($join/$total)*100;
+
+            $item['ib_participants']['ib_participant_left'] = $left;
+            $item['ib_participants']['ib_participant_percentage'] = intval($percent);
+
+            $priceNormal = $item['ib_price_ice_coupon'];
+            $item['ib_price_ice_coupon_thousand'] = number_format($priceNormal, 0, ',', '.'); //Tambah response harga pakai separator ribuan
+        }
+
+        // Fetch Items
+        $responseItems = Http::get('https://tubaguskresnabayu.site/assets/dummy_response/items.json?limit=2');
+        $items = json_decode($responseItems, true);
+        foreach ($items['data'] as &$item){
+            $priceNormal = $item['item_price'];
+            $item['item_price_pointed'] = number_format($priceNormal, 0, ',', '.'); //Tambah response harga pakai separator ribuan
+        };
+
+        // Filter Item by item_type_id WTS (Item Type 0)
+        $itemTypeWTS = 0;
+        $filteredItemWTS = array_filter($items['data'], function ($item) use ($itemTypeWTS) {
+            return $item['item_type'][0]['item_type_id'] == $itemTypeWTS;
+        });
+
+        // Filter Item by item_type_id WTB (Item Type 1)
+        $itemTypeWTB = 1;
+        $filteredItemWTB = array_filter($items['data'], function ($item) use ($itemTypeWTB) {
+            return $item['item_type'][0]['item_type_id'] == $itemTypeWTB;
+        });
+
+        // dd($filteredItemWTS);
+
+        return view('page-visitor.home.main', compact('iceboxes','filteredItemWTS','filteredItemWTB','items','brands','categories'));
         
-        info('This is some useful information.');
 
     }
 }

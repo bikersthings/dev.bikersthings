@@ -48,3 +48,33 @@ Route::group(['prefix' => '/'], function(){
 // Route Visitor end
 
 
+
+
+// Belahar
+    Route::get('/belahar', function() {
+        $brand = Http::withHeaders([
+            'Authorization' => 'Bearer pathCnVHzPHzkdZT0.1bc756d02ec7ed26a492f2fc5945d9711ef0825ddba9912cd6a62df6e0740351'
+        ])->get('https://api.airtable.com/v0/appbk25M6lGwgaVjW/item_brand');
+
+        $category = Http::withHeaders([
+            'Authorization' => 'Bearer pathCnVHzPHzkdZT0.1bc756d02ec7ed26a492f2fc5945d9711ef0825ddba9912cd6a62df6e0740351'
+        ])->get('https://api.airtable.com/v0/appbk25M6lGwgaVjW/item_category');
+
+        $item = Http::withHeaders([
+            'Authorization' => 'Bearer pathCnVHzPHzkdZT0.1bc756d02ec7ed26a492f2fc5945d9711ef0825ddba9912cd6a62df6e0740351'
+        ])->get('https://api.airtable.com/v0/appbk25M6lGwgaVjW/items');
+
+        $cate  = $category['records'];
+        $bra  = $brand['records'];
+        $ite  = $item['records'];
+
+        $test = Http::get('https://tubaguskresnabayu.site/assets/dummy_response/flight.json');
+
+        dd($test->json());
+
+
+        
+        // dd($cate);
+        // dd($ite);
+    });
+
