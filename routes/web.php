@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Visitor\HomeController;
+use App\Http\Controllers\Visitor\ItemDetailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,9 +25,10 @@ Route::group(['prefix' => '/'], function(){
         return view('page-visitor.item-filter.main');
     }); 
     
-    Route::get('/item-detail', function () {
-        return view('page-visitor.item-detail.main');
-    });  
+    Route::get('/item-detail', [ItemDetailController::class,'index']);
+    // Route::get('/item-detail', function () {
+    //     return view('page-visitor.item-detail.main');
+    // });  
     
     Route::get('/toko-detail', function () {
         return view('page-visitor.toko-detail.main');

@@ -134,44 +134,14 @@
                 <div class="col-lg-8 col-12">
                     <section id="detail-item-info">
                         <div class="item-title">
-                            AGV Pista GPRR
+                            {{$itemDetail['data']['item']['item_name']}}
                         </div>
-                        <div class="item-price">
-                            Rp. 16.000.000
+                        <div class="item-price" value="{{$itemDetail['data']['item']['item_price']}}">
+                            Rp. {{$itemDetail['data']['item']['item_price_thousand']}}
                         </div>
                         <hr>
                         <div class="item-description">
-                            Deskripsi : <br>
-                            Lorem ipsum dolor sit amet, <br>
-                            consectetur adipiscing elit, sed do <br>
-                            <br>
-                            Lorem ipsum dolor sit amet, consectetur <br>
-                            <br>
-                            <ol>
-                                <li>
-                                    orem ipsum dolor sit amet, consectetur adipiscing elit, se
-                                </li>
-                                <li>
-                                    consequat. Duis a
-                                </li>
-                                <li>
-                                    mmodo consequat. Dui
-                                </li>
-                                <li>
-                                    lor in reprehenderit in voluptate velit esse <a href="">https://cillum.dolore.eu/fugiat/nulla</a> 
-                                </li>
-                                <li>
-                                    m dolor sit amet, consectetur 
-                                </li>
-                            </ol>
-
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
-                            <br>
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no
-                            n proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            {{$itemDetail['data']['item']['item_deskripsi']}}
                         </div>
                         <hr>
                         <div class="item-seller">
@@ -180,14 +150,18 @@
                                     <a href="/toko-detail">
                                         <div class="item-seller-nama" style="">
                                             <img src="{{asset('assets/img/logo/tab-icon.png')}}" alt="" style="">
-                                            <b style="">RC b19 Store</b>
-                                            <img src="{{asset('assets/img/badge/verif.png')}}" alt="">
+                                            <b style="">{{$itemDetail['data']['user']['user_name']}}</b>
+                                            {!! ($itemDetail['data']['user']['is_verified']==true) ? 
+                                                '<img src="assets/img/badge/verif.png" alt="">' 
+                                                : 
+                                                '' 
+                                            !!}
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-lg-4 col-6">
                                     <div class="item-seller-lokasi">
-                                        <i class="fas fa-map-marker-alt mr-1"></i> Jakarta Selatan
+                                        <i class="fas fa-map-marker-alt mr-1"></i> {{$itemDetail['data']['user']['province_name']}}
                                     </div>
                                 </div>
                             </div>

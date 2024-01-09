@@ -52,36 +52,17 @@
                     </div>
                     <div class="col-12">
                         <div class="owl-carousel carousel-ice-box">
-                            {{-- <div class="item">
-                                <x-ice-box.unavail/>
-                            </div> --}}
                             @foreach ($iceboxes['data'] as $ib)
                             <div class="item">
-                                <div class="card card-item-ib">
-                                    <div class="card-body">
-                                        <img src="{{$ib['ib_thumbnail']}}" alt="" style="{{ $ib['is_expired']==true ? 'filter: grayscale(100%);' : 'no' }}">
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="nama-ib">{{$ib['ib_name']}}</div>
-                                        <div class="progress progress-ib my-2" style="position: relative; background-color: #8ec0ce">
-                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: {{$ib['ib_participants']['ib_participant_percentage']}}%; text-align: center"></div>
-                                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color:white">
-                                                {{$ib['ib_participants']['ib_participant_left']}} Left
-                                            </div>
-                                        </div>
-                                        {!! ($ib['is_expired']==true) ? 
-                                            '<button class="btn btn-gradient" disabled>FINISHED</button>' 
-                                            : 
-                                            '<button class="btn btn-gradient">REDEEM</button>' 
-                                        !!}
-                                        <div class="harga-ib">
-                                            {{$ib['ib_price_ice_coupon_thousand']}} Ice Coupon
-                                        </div>
-                                        <div class="exp-ib">
-                                            Exp : {{$ib['ib_exp_date']}}
-                                        </div>
-                                    </div>
-                                </div>
+                                <x-card.ice_box
+                                    :ibPhotos="$ib['ib_thumbnail']"
+                                    :ibName="$ib['ib_name']"
+                                    :ibLeft="$ib['ib_participants']['0']['ib_participant_left']" 
+                                    :ibICprice="$ib['ib_price_ice_coupon_thousand']"
+                                    :ibExpDate="$ib['ib_exp_date']"
+                                    :ibISexpired="$ib['is_expired']"
+                                    :ibPercentage="$ib['ib_participants']['0']['ib_participant_percentage']"
+                                />
                             </div>
                             @endforeach
                         </div>
@@ -116,42 +97,17 @@
                 <div class="owl-carousel carousel-new-comer">
                     @foreach ($filteredItemWTS as $item)
                     <div class="item">
-                        <a href="/item-detail">
-                            <div class="card card-item">
-                                <div class="card-img">
-                                    <img src="{{$item['item_photo'][0]}}">
-                                    @switch($item['item_type'][0]['item_type_id'])
-                                        @case(0)
-                                            @break
-                                        @case(1)
-                                            <div class="card-status">{{$item['item_type'][0]['item_type_name']}}</div>
-                                            @break
-                                        @case(2)
-                                            <div class="card-status">{{$item['item_type'][0]['item_type_name']}}</div>
-                                            @break
-                                    @endswitch
-                                    <div class="card-badges">
-                                        
-                                        {!! ($item['user'][0]['user_status'][0]['user_status_id']==1) ? 
-                                            '<img src="assets/img/badge/verif.png" alt="">' 
-                                            : 
-                                            '' 
-                                        !!}
-                                        
-                                        {!! ($item['item_status'][0]['item_status_id']==1) ? 
-                                            '<img src="assets/img/badge/boost-gold.png" alt="">' 
-                                            : 
-                                            '' 
-                                        !!}
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-title">{{$item['item_name']}}</p>
-                                    <p class="card-price" value="{{$item['item_price']}}">Rp {{$item['item_price_pointed']}}</p>
-                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i>{{$item['user'][0]['city_name']}}</p>
-                                </div>
-                            </div>
-                        </a>
+                        <x-card.item
+                            :itemPhotos="$item['item_photo'][0]"
+                            :itemTypeID="$item['item_type']['item_type_id']"
+                            :itemTypeName="$item['item_type']['item_type_name']" 
+                            :userStatusID="$item['user']['user_status']['user_status_id']"
+                            :itemStatusID="$item['item_status']['item_status_id']"
+                            :itemName="$item['item_name']"
+                            :itemPrice="$item['item_price']"
+                            :itemPricePointed="$item['item_price_pointed']"
+                            :userCityName="$item['user']['city_name']" 
+                        />
                     </div>
                     @endforeach
                 </div>
@@ -174,42 +130,17 @@
                 <div class="owl-carousel carousel-new-comer">
                     @foreach ($filteredItemWTB as $item)
                     <div class="item">
-                        <a href="/item-detail">
-                            <div class="card card-item">
-                                <div class="card-img">
-                                    <img src="{{$item['item_photo'][0]}}">
-                                    @switch($item['item_type'][0]['item_type_id'])
-                                        @case(0)
-                                            @break
-                                        @case(1)
-                                            <div class="card-status">{{$item['item_type'][0]['item_type_name']}}</div>
-                                            @break
-                                        @case(2)
-                                            <div class="card-status">{{$item['item_type'][0]['item_type_name']}}</div>
-                                            @break
-                                    @endswitch
-                                    <div class="card-badges">
-                                        
-                                        {!! ($item['user'][0]['user_status'][0]['user_status_id']==1) ? 
-                                            '<img src="assets/img/badge/verif.png" alt="">' 
-                                            : 
-                                            '' 
-                                        !!}
-                                        
-                                        {!! ($item['item_status'][0]['item_status_id']==1) ? 
-                                            '<img src="assets/img/badge/boost-gold.png" alt="">' 
-                                            : 
-                                            '' 
-                                        !!}
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-title">{{$item['item_name']}}</p>
-                                    <p class="card-price" value="{{$item['item_price']}}">Rp {{$item['item_price_pointed']}}</p>
-                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i>{{$item['user'][0]['city_name']}}</p>
-                                </div>
-                            </div>
-                        </a>
+                        <x-card.item
+                            :itemPhotos="$item['item_photo'][0]"
+                            :itemTypeID="$item['item_type']['item_type_id']"
+                            :itemTypeName="$item['item_type']['item_type_name']" 
+                            :userStatusID="$item['user']['user_status']['user_status_id']"
+                            :itemStatusID="$item['item_status']['item_status_id']"
+                            :itemName="$item['item_name']"
+                            :itemPrice="$item['item_price']"
+                            :itemPricePointed="$item['item_price_pointed']"
+                            :userCityName="$item['user']['city_name']" 
+                        />
                     </div>
                     @endforeach
                 </div>
@@ -218,7 +149,7 @@
     </div>
 </section>
 
-<section id="brands">
+{{-- <section id="brands">
     <div class="container">
         <div class="owl-carousel carousel-brands">
             <div class="item">
@@ -235,9 +166,9 @@
             @endforeach 
         </div>
     </div>
-</section>
+</section> --}}
 
-<section id="kategori">
+{{-- <section id="kategori">
     <div class="container">
         <div class="owl-carousel carousel-kategori">
             @foreach ($categories as $category)
@@ -253,7 +184,7 @@
             @endforeach
         </div>
     </div>
-</section>
+</section> --}}
 
 {{-- <section id="seller">
     <div class="container">
@@ -311,42 +242,17 @@
         <div class="row">
             @foreach ($items['data'] as $item)
             <div class="col-lg-2 col-6">
-                <a href="/item-detail">
-                    <div class="card card-item">
-                        <div class="card-img">
-                            <img src="{{$item['item_photo'][0]}}">
-                            @switch($item['item_type'][0]['item_type_id'])
-                                @case(0)
-                                    @break
-                                @case(1)
-                                    <div class="card-status">{{$item['item_type'][0]['item_type_name']}}</div>
-                                    @break
-                                @case(2)
-                                    <div class="card-status">{{$item['item_type'][0]['item_type_name']}}</div>
-                                    @break
-                            @endswitch
-                            <div class="card-badges">
-                                
-                                {!! ($item['user'][0]['user_status'][0]['user_status_id']==1) ? 
-                                    '<img src="assets/img/badge/verif.png" alt="">' 
-                                    : 
-                                    '' 
-                                !!}
-                                
-                                {!! ($item['item_status'][0]['item_status_id']==1) ? 
-                                    '<img src="assets/img/badge/boost-gold.png" alt="">' 
-                                    : 
-                                    '' 
-                                !!}
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title">{{$item['item_name']}}</p>
-                            <p class="card-price" value="{{$item['item_price']}}">Rp {{$item['item_price_pointed']}}</p>
-                            <p class="card-location"><i class="fas fa-map-marker-alt"></i>{{$item['user'][0]['city_name']}}</p>
-                        </div>
-                    </div>
-                </a>
+                <x-card.item
+                    :itemPhotos="$item['item_photo'][0]"
+                    :itemTypeID="$item['item_type']['item_type_id']"
+                    :itemTypeName="$item['item_type']['item_type_name']" 
+                    :userStatusID="$item['user']['user_status']['user_status_id']"
+                    :itemStatusID="$item['item_status']['item_status_id']"
+                    :itemName="$item['item_name']"
+                    :itemPrice="$item['item_price']"
+                    :itemPricePointed="$item['item_price_pointed']"
+                    :userCityName="$item['user']['city_name']" 
+                />
             </div>
             @endforeach
         </div>
