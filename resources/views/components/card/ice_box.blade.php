@@ -5,7 +5,7 @@
     <div class="card-footer">
         <div class="nama-ib">{{$ibName}}</div>
         <div class="progress progress-ib my-2" style="position: relative; background-color: #8ec0ce">
-            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: {{$ibPercentage}}%; text-align: center"></div> {{-- Width dinamis dapet dari ((kuota-parti)/100%) --}}
+            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: {{$ibPercentage}}%; text-align: center"></div>
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color:white">
                 {{$ibLeft}} Left
             </div>
@@ -13,7 +13,7 @@
         {!! ($ibISexpired==true) ? 
             '<button class="btn btn-gradient" disabled>FINISHED</button>' 
             : 
-            '<button class="btn btn-gradient">REDEEM</button>' 
+            '<button type="button" class="btn btn-gradient" data-bs-toggle="modal" data-bs-target="#'.$ibCode.'">REDEEM</button>'
         !!}
         <div class="harga-ib">
             {{$ibICprice}} Ice Coupon

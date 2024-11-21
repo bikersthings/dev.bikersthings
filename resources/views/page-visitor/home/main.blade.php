@@ -33,6 +33,8 @@
     </div>
 </section>
 
+    
+
 <section id="ice-box">
     <div class="container">
         <div class="row">
@@ -62,6 +64,7 @@
                                     :ibExpDate="$ib['ib_exp_date']"
                                     :ibISexpired="$ib['is_expired']"
                                     :ibPercentage="$ib['ib_participants']['0']['ib_participant_percentage']"
+                                    :ibCode="$ib['ib_code']"
                                 />
                             </div>
                             @endforeach
@@ -251,7 +254,7 @@
                     :itemName="$item['item_name']"
                     :itemPrice="$item['item_price']"
                     :itemPricePointed="$item['item_price_pointed']"
-                    :userCityName="$item['user']['city_name']" 
+                    :userCityName="$item['user']['city_name']"
                 />
             </div>
             @endforeach
@@ -263,6 +266,16 @@
         </div>
     </div>
 </section>
+@foreach ($iceboxes['data'] as $ib)
+<x-modal.ice_box
+    :ibPhotos="$ib['ib_thumbnail']"
+    :ibName="$ib['ib_name']"
+    :ibICprice="$ib['ib_price_ice_coupon_thousand']"
+    :ibCode="$ib['ib_code']"
+/>
+@endforeach
+
+@include('page-visitor.home.modal-ib')
 @endsection
 
 @section('js')

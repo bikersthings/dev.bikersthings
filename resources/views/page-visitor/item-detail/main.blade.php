@@ -1,7 +1,6 @@
 @extends('layout-visitor.main')
 
 @section('content')
-
     <section id="detail-item">
         <div class="container">
             <div class="row">
@@ -10,122 +9,28 @@
                         <div class="card">
                             <div class="card-header" style="margin-bottom: 12px">
                                 <div class="owl-carousel carousel-product-top">
-                                    <div class="item" data-hash="pic-1">
+                                    @foreach ($images as  $index => $image)
+                                    <div class="item" data-hash="pic-{{$index+1}}">
                                         <a>
                                             <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
+                                                <img src="{{$image}}" class="card-img-top">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="item" data-hash="pic-2">
-                                        <a>
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item" data-hash="pic-3">
-                                        <a>
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item" data-hash="pic-4">
-                                        <a>
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item" data-hash="pic-5">
-                                        <a>
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb5.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item" data-hash="pic-6">
-                                        <a>
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item" data-hash="pic-7">
-                                        <a>
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item" data-hash="pic-8">
-                                        <a>
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                             <div class="card-body">
                                 <div class="owl-carousel carousel-product-bottom">
+                                    @foreach ($images as  $index => $image)
                                     <div class="item">
-                                        <a href="#pic-1">
+                                        <a href="#pic-{{$index+1}}">
                                             <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
+                                                <img src="{{$image}}" class="card-img-top">
                                             </div>
                                         </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#pic-2">
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb2.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#pic-3">
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#pic-4">
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#pic-5">
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb5.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#pic-6">
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb3.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#pic-7">
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb1.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#pic-8">
-                                            <div class="card card-item">
-                                                <img src="{{asset('assets/img/thumbnail/thumb4.png')}}" class="card-img-top">
-                                            </div>
-                                        </a>
-                                    </div>
+                                    </div> 
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -141,7 +46,7 @@
                         </div>
                         <hr>
                         <div class="item-description">
-                            {{$itemDetail['data']['item']['item_deskripsi']}}
+                            {!!$itemDetail['data']['item']['item_deskripsi']!!}
                         </div>
                         <hr>
                         <div class="item-seller">
@@ -168,10 +73,15 @@
                         </div>
                         <div class="seller-sosmed">
                             <div class="row">
+                                @foreach ($sosmeds as $sos)
                                 <div class="col-lg-3 col-6">
-                                    <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-wa.png')}}" alt=""> Whats App</button>
+                                    <a type="button" class="btn btn-sosmed" target="blank_" href="{{$sos['soc_prelink']}}{{$sos['soc_username']}}">
+                                        <img src="{{$sos['soc_icon']}}" alt="">
+                                        {{$sos['soc_name']}}
+                                    </a>
                                 </div>
-                                <div class="col-lg-3 col-6">
+                                @endforeach
+                                {{-- <div class="col-lg-3 col-6">
                                     <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-line.png')}}" alt=""> Line</button>
                                 </div>
                                 <div class="col-lg-3 col-6">
@@ -179,7 +89,7 @@
                                 </div>
                                 <div class="col-lg-3 col-6">
                                     <button class="btn btn-sosmed"><img src="{{asset('assets/img/sosmed/sosmed-tele.png')}}" alt=""> Telegram</button>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </section>

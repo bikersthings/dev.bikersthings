@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\card;
+namespace App\View\Components\modal;
 
 use Illuminate\View\Component;
 
@@ -8,22 +8,14 @@ class ice_box extends Component
 {
     public $ibPhotos;
     public $ibName;
-    public $ibLeft;
     public $ibICprice;
-    public $ibExpDate;
-    public $ibISexpired;
-    public $ibPercentage;
     public $ibCode;
 
-    public function __construct($ibPhotos, $ibName, $ibLeft, $ibICprice, $ibExpDate, $ibISexpired, $ibPercentage, $ibCode)
+    public function __construct($ibPhotos, $ibName, $ibICprice, $ibCode)
     {
         $this->ibPhotos = $ibPhotos;
         $this->ibName = $ibName;
-        $this->ibLeft = $ibLeft;
         $this->ibICprice = $ibICprice;
-        $this->ibExpDate = $ibExpDate;
-        $this->ibISexpired = $ibISexpired;
-        $this->ibPercentage = $ibPercentage;
         $this->ibCode = $ibCode;
         
     }
@@ -35,6 +27,6 @@ class ice_box extends Component
      */
     public function render()
     {
-        return view('components.card.ice_box');
+        return view('components.modal.ice_box');
     }
 }

@@ -29,7 +29,7 @@ class HomeController extends Controller
 
 
         // Fetch IceBox
-        $responseIceBox = Http::get('https://tubaguskresnabayu.site/assets/dummy_response/iceboxes.json');
+        $responseIceBox = Http::get('https://bigdigidev.my.id/assets/dummy_response/iceboxes.json');
         $iceboxes = json_decode($responseIceBox, true);
         foreach ($iceboxes['data'] as &$item){
             $join = $item['ib_participants']['0']['ib_participant_join'];
@@ -45,28 +45,33 @@ class HomeController extends Controller
         };
 
         // Fetch Items
-        $responseItems = Http::get('https://tubaguskresnabayu.site/assets/dummy_response/items.json');
+        $responseItems = Http::get('https://bigdigidev.my.id/assets/dummy_response/items.json');
         $items = json_decode($responseItems, true);
         foreach ($items['data'] as &$item){
             $priceNormal = $item['item_price'];
             $item['item_price_pointed'] = number_format($priceNormal, 0, ',', '.'); //Tambah response harga pakai separator ribuan
         };
+        $itemss = array_slice($items['data'], 0, 1);
 
         // Filter Fetched Item by item_type_id WTS (Item Type 0)
         $itemTypeWTS = 0;
-        $filteredItemWTS = array_filter($items['data'], function ($item) use ($itemTypeWTS) {
-            return $item['item_type']['item_type_id'] == $itemTypeWTS;
-        });
-        $filteredItemWTS = array_values($filteredItemWTS);
+        $filteredItemWTS = 
+        array_values(
+            array_slice(
+                array_filter($items['data'], fn($item) => $item['item_type']['item_type_id'] == $itemTypeWTS), 
+            0,6)
+        );
 
         // Filter Fethced Item by item_type_id WTB (Item Type 1)
         $itemTypeWTB = 1;
-        $filteredItemWTB = array_filter($items['data'], function ($item) use ($itemTypeWTB) {
-            return $item['item_type']['item_type_id'] == $itemTypeWTB;
-        });
-        $filteredItemWTB = array_values($filteredItemWTB);
+        $filteredItemWTB = 
+        array_values(
+            array_slice(
+                array_filter($items['data'], fn($item) => $item['item_type']['item_type_id'] == $itemTypeWTB), 
+            0,6)
+        );
 
-        // dd($filteredItemWTS);
+        // dd($itemss);
 
         return view('page-visitor.home.main',compact('iceboxes','filteredItemWTS','filteredItemWTB','items'));
 

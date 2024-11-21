@@ -21,5 +21,4 @@
 @endsection
 
 @section('js')
-    
 @endsection
